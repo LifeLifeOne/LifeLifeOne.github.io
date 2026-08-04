@@ -20,4 +20,4 @@ Le site sera publié à l'adresse `https://<utilisateur>.github.io/<depot>/`. Po
 
 ## Lettres de recommandation
 
-Ne jamais déposer les originaux dans le dépôt public. Placer uniquement des copies en image dans `assets/recommandations/` après avoir masqué les numéros de téléphone, adresses e-mail, adresses postales et signatures. Vérifier également les métadonnées des images avant publication.
+Les trois lettres accessibles depuis le portfolio sont des versions publiques caviardées. Les coordonnées de leurs auteurs ont été masquées afin de protéger leurs données personnelles et de limiter les risques de spam. Les versions originales peuvent être communiquées sur demande par e-mail.

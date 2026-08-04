@@ -30,8 +30,7 @@
 
     <header class="site-header" data-header>
       <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-        <span class="brand-mark" aria-hidden="true">VB</span>
-        <span>Vivien Barbeau</span>
+        <span>Vivien</span> <strong>BARBEAU</strong>
       </a>
 
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
@@ -43,6 +42,7 @@
         <a href="#parcours">Parcours</a>
         <a href="#projet">Projet DevOps</a>
         <a href="#projets">Projets</a>
+        <a href="#certifications">Certifications</a>
         <a href="#recommandations">Recommandations</a>
         <a class="nav-cta" href="#contact">Me contacter</a>
       </nav>
@@ -72,7 +72,7 @@
 
         <div class="hero-visual reveal" data-delay="1">
           <div class="portrait-frame">
-            <img src="assets/vivien-barbeau.png" alt="Portrait de Vivien Barbeau" />
+            <img src="assets/vivien-barbeau.jpg" alt="Portrait de Vivien Barbeau" />
             <span class="portrait-caption">Développement / DevOps</span>
           </div>
           <div class="status-card">
@@ -109,6 +109,14 @@
                 OpenClassrooms. Automatisation, déploiement continu, conteneurisation,
                 orchestration, Infrastructure as Code et cloud AWS.
               </p>
+              <a
+                class="training-program-link"
+                href="https://static.oc-static.com/syllabus/2461-expert-devops-fr-fr-standard.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Consulter le programme <span>PDF ↗</span>
+              </a>
             </div>
           </article>
 
@@ -119,9 +127,36 @@
               <h3>Développeur web Drupal / PHP</h3>
               <p>
                 Conception de projets Drupal complexes, modules sur mesure, traitements
-                asynchrones, intégrations d’API, recherche à facettes et déploiements CI/CD.
+                asynchrones, intégrations d’API, recherche à facettes, maintenance corrective
+                et évolutive (TMA), et déploiements CI/CD.
               </p>
-              <span class="highlight">Projet phare : refonte de metropole.nantes.fr, 5 000+ contenus</span>
+              <div class="professional-projects">
+                <p class="professional-projects-title">Projets phares réalisés chez Adimeo</p>
+                <a class="professional-project" href="https://metropole.nantes.fr" target="_blank" rel="noreferrer">
+                  <span>01</span>
+                  <div>
+                    <strong>Nantes Métropole</strong>
+                    <small>Refonte Drupal · 5 000+ contenus · accessibilité supérieure à 80 %</small>
+                  </div>
+                  <b aria-hidden="true">↗</b>
+                </a>
+                <a class="professional-project" href="https://www.ecoledulouvre.fr" target="_blank" rel="noreferrer">
+                  <span>02</span>
+                  <div>
+                    <strong>École du Louvre</strong>
+                    <small>Refonte du site institutionnel sous Drupal</small>
+                  </div>
+                  <b aria-hidden="true">↗</b>
+                </a>
+                <a class="professional-project" href="https://www.culturetheque.com/fr" target="_blank" rel="noreferrer">
+                  <span>03</span>
+                  <div>
+                    <strong>Culturethèque</strong>
+                    <small>Participation au build de la médiathèque numérique de l’Institut français</small>
+                  </div>
+                  <b aria-hidden="true">↗</b>
+                </a>
+              </div>
             </div>
           </article>
 
@@ -142,11 +177,11 @@
       <section class="case-study" id="projet">
         <div class="case-study-inner section">
           <div class="case-intro reveal">
-            <p class="eyebrow eyebrow-light"><span></span>Projet DevOps phare</p>
+            <p class="eyebrow eyebrow-light"><span></span>Projet de formation · OpenClassrooms</p>
             <h2>MicroCRM,<br />de la branche à la production.</h2>
             <p>
-              Industrialisation complète d’une application Angular / Spring Boot : construire,
-              tester, sécuriser, publier, déployer et observer avec une chaîne reproductible.
+              Projet réalisé dans le cadre de ma formation Expert DevOps : industrialisation
+              complète d’une application Angular / Spring Boot, de la construction à l’observabilité.
             </p>
             <a
               class="text-link text-link-light"
@@ -158,15 +193,13 @@
             </a>
           </div>
 
-          <div class="case-metrics reveal" data-delay="1">
-            <div><strong>7</strong><span>étapes CI/CD</span></div>
-            <div><strong>2</strong><span>environnements</span></div>
-            <div><strong>4</strong><span>métriques DORA</span></div>
-          </div>
-
-          <div class="workflow reveal">
+          <div
+            class="workflow reveal"
+            aria-label="Pipeline : Build, Test, Security, Package, Scan, Release et Deploy, puis monitoring en continu"
+          >
             <span>Build</span><b>→</b><span>Test</span><b>→</b><span>Security</span><b>→</b>
             <span>Package</span><b>→</b><span>Scan</span><b>→</b><span>Release</span><b>→</b><span>Deploy</span>
+            <b class="workflow-continuation">⇢</b><span class="workflow-monitoring">Monitoring <small>en continu</small></span>
           </div>
 
           <div class="case-grid">
@@ -177,9 +210,6 @@
                 Pipeline GitLab CI modulaire, staging automatique, production manuelle,
                 versioning sémantique et rollback Helm.
               </p>
-              <div class="case-image">
-                <img src="assets/p6-pipeline.png" alt="Pipeline GitLab CI du projet MicroCRM" loading="lazy" />
-              </div>
             </article>
 
             <article class="case-card reveal" data-delay="1">
@@ -189,9 +219,6 @@
                 SAST, détection de secrets, SonarCloud et gate Trivy bloquant les images
                 vulnérables avant leur publication.
               </p>
-              <div class="case-image">
-                <img src="assets/p6-security.png" alt="Gate de sécurité Trivy dans GitLab CI" loading="lazy" />
-              </div>
             </article>
 
             <article class="case-card reveal" data-delay="2">
@@ -201,9 +228,6 @@
                 Machine préparée avec Ansible, plateforme déclarée avec Terraform et Helm,
                 logs ELK et tableau de bord DORA.
               </p>
-              <div class="case-image">
-                <img src="assets/p6-monitoring.png" alt="Tableau de bord DORA dans Kibana" loading="lazy" />
-              </div>
             </article>
           </div>
 
@@ -216,13 +240,33 @@
 
       <section class="section side-projects" id="projets">
         <div class="section-heading reveal">
-          <p class="eyebrow"><span></span>Projets & open source</p>
-          <h2>Construire aussi<br />pour les utilisateurs.</h2>
+          <p class="eyebrow"><span></span>Projets personnels & open source</p>
+          <h2>Construire aussi<br />mes propres produits.</h2>
         </div>
 
         <div class="project-list">
           <article class="project-row reveal">
             <span class="project-number">01</span>
+            <div class="project-main">
+              <p class="project-type">Drupal · Module contribué</p>
+              <h3>UX Enhanced Autocomplete</h3>
+              <p>
+                Module open source améliorant l’expérience des champs d’autocomplétion natifs
+                de Drupal, publié sur Drupal.org. Près de 60 sites déclarent aujourd’hui
+                l’utiliser selon les statistiques de la plateforme.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://www.drupal.org/project/ux_enhanced_autocomplete"
+                target="_blank"
+                rel="noreferrer"
+              >Drupal.org ↗</a>
+            </div>
+          </article>
+
+          <article class="project-row reveal">
+            <span class="project-number">02</span>
             <div class="project-main">
               <p class="project-type">Android · Web · Open data</p>
               <h3>CarburantsPrix.fr</h3>
@@ -238,25 +282,6 @@
                 target="_blank"
                 rel="noreferrer"
               >Google Play ↗</a>
-            </div>
-          </article>
-
-          <article class="project-row reveal">
-            <span class="project-number">02</span>
-            <div class="project-main">
-              <p class="project-type">Drupal · Module contribué</p>
-              <h3>UX Enhanced Autocomplete</h3>
-              <p>
-                Module open source améliorant l’expérience des champs d’autocomplétion natifs
-                de Drupal, publié sur Drupal.org.
-              </p>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://www.drupal.org/project/ux_enhanced_autocomplete"
-                target="_blank"
-                rel="noreferrer"
-              >Drupal.org ↗</a>
             </div>
           </article>
         </div>
@@ -290,30 +315,160 @@
         </div>
       </section>
 
+      <section class="section certifications" id="certifications">
+        <div class="certifications-heading reveal">
+          <div class="section-heading">
+            <p class="eyebrow"><span></span>Certifications & titres</p>
+            <h2>Certifier les acquis.<br />Continuer d’apprendre.</h2>
+          </div>
+          <p>
+            Des validations complémentaires en développement, qualité web et bonnes pratiques,
+            au service d’une expertise technique qui continue d’évoluer.
+          </p>
+        </div>
+
+        <div class="certification-grid">
+          <article class="certification-card reveal">
+            <div class="certification-topline">
+              <span class="certification-year">2022</span>
+              <span class="certification-state state-active">Valide</span>
+            </div>
+            <p class="certification-issuer">Opquast</p>
+            <h3>Maîtrise de la qualité en projet web</h3>
+            <p class="certification-detail">
+              Qualité numérique, accessibilité, performance, UX, sécurité et bonnes pratiques web.
+            </p>
+            <p class="certification-date">Valide jusqu’en septembre 2027</p>
+          </article>
+
+          <article class="certification-card reveal" data-delay="1">
+            <div class="certification-topline">
+              <span class="certification-year">2024</span>
+              <span class="certification-state">Délivrée</span>
+            </div>
+            <p class="certification-issuer">Human Coders</p>
+            <h3>Formation JavaScript Avancé</h3>
+            <p class="certification-detail">
+              Approfondissement du langage, de ses mécanismes et des pratiques modernes de développement.
+            </p>
+            <p class="certification-date">Délivrée en juin 2024</p>
+          </article>
+
+          <article class="certification-card reveal" data-delay="2">
+            <div class="certification-topline">
+              <span class="certification-year">2021</span>
+              <span class="certification-state">Titre obtenu</span>
+            </div>
+            <p class="certification-issuer">3W Academy</p>
+            <h3>Développeur intégrateur web</h3>
+            <p class="certification-detail">
+              Titre professionnel de Développeur intégrateur en réalisation d’applications Web.
+            </p>
+            <p class="certification-date">RNCP niveau III · septembre 2021</p>
+          </article>
+
+          <article class="certification-card reveal" data-delay="3">
+            <div class="certification-topline">
+              <span class="certification-year">2021</span>
+              <span class="certification-state state-history">Historique</span>
+            </div>
+            <p class="certification-issuer">Tosa Certifications</p>
+            <h3>Certification TOSA PHP</h3>
+            <p class="certification-detail">
+              Évaluation et validation des compétences fondamentales en PHP.
+            </p>
+            <p class="certification-date">Validité terminée en septembre 2023</p>
+          </article>
+        </div>
+
+        <div class="certification-progress certification-completed reveal">
+          <div>
+            <span class="completion-mark" aria-hidden="true">✓</span>
+            <p>Formation acquise</p>
+          </div>
+          <h3>Écoconception numérique</h3>
+          <span>EduGroupe · 2025–2026</span>
+        </div>
+
+        <div class="certification-progress reveal">
+          <div>
+            <span class="progress-pulse" aria-hidden="true"></span>
+            <p>Certification en préparation</p>
+          </div>
+          <h3>Expert DevOps — RNCP niveau 7</h3>
+          <span>OpenClassrooms · 2026</span>
+        </div>
+      </section>
+
       <section class="section recommendations" id="recommandations">
         <div class="recommendation-copy reveal">
           <p class="eyebrow"><span></span>Recommandations</p>
           <h2>Des collaborations<br />qui parlent du travail.</h2>
           <p>
-            Mes lettres de recommandation contiennent des coordonnées personnelles. Pour
-            protéger leurs auteurs, les originaux ne sont pas publiés en accès libre.
+            Quatre anciens responsables et collaborateurs témoignent de mon expertise technique,
+            de ma rigueur et de mon engagement au sein d’une équipe.
           </p>
-          <a class="button button-secondary" href="mailto:vivien.barbeau.contact@gmail.com?subject=Demande%20de%20recommandations">
-            Demander les recommandations
-          </a>
+          <p class="recommendation-privacy">
+            Afin de protéger les données personnelles et de limiter les risques de divulgation
+            ou de spam, les coordonnées ont été masquées sur les versions publiques. Pour obtenir
+            une lettre originale avec les coordonnées de son auteur,
+            <a href="mailto:vivien.barbeau.contact@gmail.com">contactez-moi par e-mail</a>.
+          </p>
+          <span class="recommendation-note">Versions publiques caviardées · PDF & LinkedIn</span>
         </div>
 
-        <div class="privacy-card reveal" data-delay="1">
-          <div class="privacy-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M7 10V7a5 5 0 0 1 10 0v3M5 10h14v11H5V10Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 14v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <p class="privacy-label">Données protégées</p>
-          <h3>Aperçus anonymisés</h3>
-          <p>
-            Les versions destinées au portfolio seront converties en images et expurgées des
-            numéros de téléphone, adresses et signatures avant publication.
-          </p>
-          <div class="privacy-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="recommendation-list reveal" data-delay="1">
+          <article class="letter-card">
+            <div class="letter-identity">
+              <span aria-hidden="true">AC</span>
+              <div>
+                <h3>Adam Carton de Wiart</h3>
+                <p>Directeur du pôle CMS & Front · Adimeo</p>
+              </div>
+            </div>
+            <a href="assets/LR%20-%20ACDW.pdf" target="_blank" rel="noreferrer">
+              Consulter la lettre <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="letter-card">
+            <div class="letter-identity">
+              <span aria-hidden="true">PW</span>
+              <div>
+                <h3>Pierre Waldura</h3>
+                <p>Lead Developer Drupal · Adimeo</p>
+              </div>
+            </div>
+            <a href="assets/LR%20-%20PW.pdf" target="_blank" rel="noreferrer">
+              Consulter la lettre <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="letter-card">
+            <div class="letter-identity">
+              <span aria-hidden="true">TT</span>
+              <div>
+                <h3>Tommy Tholas</h3>
+                <p>Team Leader Drupal · AI Engineer</p>
+              </div>
+            </div>
+            <a href="assets/LR%20-%20TT.pdf" target="_blank" rel="noreferrer">
+              Consulter la lettre <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="letter-card">
+            <div class="letter-identity">
+              <span aria-hidden="true">CF</span>
+              <div>
+                <h3>Carole Fouere</h3>
+                <p>Consultante en transformation numérique & accessibilité</p>
+              </div>
+            </div>
+            <a href="assets/LR%20-%20CF.png" target="_blank" rel="noreferrer">
+              Voir sur LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </article>
         </div>
       </section>
 
