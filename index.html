@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Vivien Barbeau, développeur web Drupal/PHP en spécialisation DevOps à Nantes."
+    />
+    <meta name="theme-color" content="#f5f3ec" />
+    <meta property="og:title" content="Vivien Barbeau — Développeur web & DevOps" />
+    <meta
+      property="og:description"
+      content="Développement web, automatisation, CI/CD et infrastructure as code."
+    />
+    <meta property="og:type" content="website" />
+    <title>Vivien Barbeau — Développeur web & DevOps</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true">VB</span>
+        <span>Vivien Barbeau</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
+        <span></span><span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <nav id="navigation" class="navigation" aria-label="Navigation principale">
+        <a href="#parcours">Parcours</a>
+        <a href="#projet">Projet DevOps</a>
+        <a href="#projets">Projets</a>
+        <a href="#recommandations">Recommandations</a>
+        <a class="nav-cta" href="#contact">Me contacter</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section class="hero section" id="accueil">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span>Nantes, France</p>
+          <h1>
+            <span>Je développe</span>
+            <span>le web.</span>
+            <span>J’industrialise <em>sa</em></span>
+            <span><em>livraison.</em></span>
+          </h1>
+          <p class="hero-intro">
+            Développeur Drupal/PHP avec près de 4 ans d’expérience, je me spécialise
+            aujourd’hui en DevOps pour relier code, qualité, sécurité et infrastructure.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projet">Découvrir mon projet DevOps</a>
+            <a class="button button-secondary" href="assets/CV-Vivien-Barbeau.pdf" download>
+              Télécharger mon CV <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="1">
+          <div class="portrait-frame">
+            <img src="assets/vivien-barbeau.png" alt="Portrait de Vivien Barbeau" />
+            <span class="portrait-caption">Développement / DevOps</span>
+          </div>
+          <div class="status-card">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <strong>Spécialisation DevOps</strong>
+              <span>Formation Expert DevOps — RNCP 7</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Domaines de compétence">
+        <span>Drupal / PHP</span><i></i>
+        <span>GitLab CI/CD</span><i></i>
+        <span>Terraform</span><i></i>
+        <span>Kubernetes</span><i></i>
+        <span>Observabilité</span>
+      </section>
+
+      <section class="section journey" id="parcours">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span>Mon parcours</p>
+          <h2>Du produit web à<br />la chaîne de livraison.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2026</div>
+            <div class="timeline-content">
+              <p class="timeline-label">Spécialisation en cours</p>
+              <h3>Expert DevOps — RNCP 7</h3>
+              <p>
+                OpenClassrooms. Automatisation, déploiement continu, conteneurisation,
+                orchestration, Infrastructure as Code et cloud AWS.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2022—25</div>
+            <div class="timeline-content">
+              <p class="timeline-label">Adimeo · Nantes</p>
+              <h3>Développeur web Drupal / PHP</h3>
+              <p>
+                Conception de projets Drupal complexes, modules sur mesure, traitements
+                asynchrones, intégrations d’API, recherche à facettes et déploiements CI/CD.
+              </p>
+              <span class="highlight">Projet phare : refonte de metropole.nantes.fr, 5 000+ contenus</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+              <p class="timeline-label">3W Academy · Nantes</p>
+              <h3>Développeur applications web</h3>
+              <p>
+                Formation intensive full-stack et obtention du titre RNCP niveau III de
+                Développeur web.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-study" id="projet">
+        <div class="case-study-inner section">
+          <div class="case-intro reveal">
+            <p class="eyebrow eyebrow-light"><span></span>Projet DevOps phare</p>
+            <h2>MicroCRM,<br />de la branche à la production.</h2>
+            <p>
+              Industrialisation complète d’une application Angular / Spring Boot : construire,
+              tester, sécuriser, publier, déployer et observer avec une chaîne reproductible.
+            </p>
+            <a
+              class="text-link text-link-light"
+              href="https://gitlab.com/openclassrooms5651214/openclassrooms-p6"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Voir le dépôt GitLab <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="case-metrics reveal" data-delay="1">
+            <div><strong>7</strong><span>étapes CI/CD</span></div>
+            <div><strong>2</strong><span>environnements</span></div>
+            <div><strong>4</strong><span>métriques DORA</span></div>
+          </div>
+
+          <div class="workflow reveal">
+            <span>Build</span><b>→</b><span>Test</span><b>→</b><span>Security</span><b>→</b>
+            <span>Package</span><b>→</b><span>Scan</span><b>→</b><span>Release</span><b>→</b><span>Deploy</span>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card reveal">
+              <span class="card-index">01</span>
+              <h3>Livraison continue</h3>
+              <p>
+                Pipeline GitLab CI modulaire, staging automatique, production manuelle,
+                versioning sémantique et rollback Helm.
+              </p>
+              <div class="case-image">
+                <img src="assets/p6-pipeline.png" alt="Pipeline GitLab CI du projet MicroCRM" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="case-card reveal" data-delay="1">
+              <span class="card-index">02</span>
+              <h3>Sécurité intégrée</h3>
+              <p>
+                SAST, détection de secrets, SonarCloud et gate Trivy bloquant les images
+                vulnérables avant leur publication.
+              </p>
+              <div class="case-image">
+                <img src="assets/p6-security.png" alt="Gate de sécurité Trivy dans GitLab CI" loading="lazy" />
+              </div>
+            </article>
+
+            <article class="case-card reveal" data-delay="2">
+              <span class="card-index">03</span>
+              <h3>Infrastructure & observation</h3>
+              <p>
+                Machine préparée avec Ansible, plateforme déclarée avec Terraform et Helm,
+                logs ELK et tableau de bord DORA.
+              </p>
+              <div class="case-image">
+                <img src="assets/p6-monitoring.png" alt="Tableau de bord DORA dans Kibana" loading="lazy" />
+              </div>
+            </article>
+          </div>
+
+          <div class="tech-list reveal" aria-label="Technologies utilisées sur MicroCRM">
+            <span>GitLab CI</span><span>Docker</span><span>Kubernetes</span><span>Helm</span>
+            <span>Terraform</span><span>Ansible</span><span>Trivy</span><span>ELK</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section side-projects" id="projets">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span>Projets & open source</p>
+          <h2>Construire aussi<br />pour les utilisateurs.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-row reveal">
+            <span class="project-number">01</span>
+            <div class="project-main">
+              <p class="project-type">Android · Web · Open data</p>
+              <h3>CarburantsPrix.fr</h3>
+              <p>
+                Application Android et site web comparant les prix de plus de 9 000 stations
+                en France à partir de données gouvernementales.
+              </p>
+            </div>
+            <div class="project-links">
+              <a href="https://carburantsprix.fr" target="_blank" rel="noreferrer">Site web ↗</a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix"
+                target="_blank"
+                rel="noreferrer"
+              >Google Play ↗</a>
+            </div>
+          </article>
+
+          <article class="project-row reveal">
+            <span class="project-number">02</span>
+            <div class="project-main">
+              <p class="project-type">Drupal · Module contribué</p>
+              <h3>UX Enhanced Autocomplete</h3>
+              <p>
+                Module open source améliorant l’expérience des champs d’autocomplétion natifs
+                de Drupal, publié sur Drupal.org.
+              </p>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://www.drupal.org/project/ux_enhanced_autocomplete"
+                target="_blank"
+                rel="noreferrer"
+              >Drupal.org ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <div class="section skills-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span></span>Compétences</p>
+            <h2>Une approche<br />de bout en bout.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <span>01</span><h3>Développement</h3>
+              <p>Drupal, PHP, JavaScript, intégration web, API, qualité et accessibilité.</p>
+            </article>
+            <article class="skill-card reveal" data-delay="1">
+              <span>02</span><h3>CI/CD & sécurité</h3>
+              <p>GitLab CI/CD, Docker, SonarCloud, Trivy, SAST et gestion des releases.</p>
+            </article>
+            <article class="skill-card reveal" data-delay="2">
+              <span>03</span><h3>Infrastructure</h3>
+              <p>Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.</p>
+            </article>
+            <article class="skill-card reveal" data-delay="3">
+              <span>04</span><h3>Observabilité</h3>
+              <p>Elasticsearch, Logstash, Kibana, Filebeat, alerting et métriques DORA.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section recommendations" id="recommandations">
+        <div class="recommendation-copy reveal">
+          <p class="eyebrow"><span></span>Recommandations</p>
+          <h2>Des collaborations<br />qui parlent du travail.</h2>
+          <p>
+            Mes lettres de recommandation contiennent des coordonnées personnelles. Pour
+            protéger leurs auteurs, les originaux ne sont pas publiés en accès libre.
+          </p>
+          <a class="button button-secondary" href="mailto:vivien.barbeau.contact@gmail.com?subject=Demande%20de%20recommandations">
+            Demander les recommandations
+          </a>
+        </div>
+
+        <div class="privacy-card reveal" data-delay="1">
+          <div class="privacy-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 10V7a5 5 0 0 1 10 0v3M5 10h14v11H5V10Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 14v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <p class="privacy-label">Données protégées</p>
+          <h3>Aperçus anonymisés</h3>
+          <p>
+            Les versions destinées au portfolio seront converties en images et expurgées des
+            numéros de téléphone, adresses et signatures avant publication.
+          </p>
+          <div class="privacy-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section contact-inner reveal">
+          <p class="eyebrow eyebrow-light"><span></span>Contact</p>
+          <h2>Un projet web ou DevOps<br />à faire avancer ?</h2>
+          <p>Je suis basé à Nantes et ouvert aux échanges autour de nouveaux projets.</p>
+          <div class="contact-links">
+            <a href="mailto:vivien.barbeau.contact@gmail.com">M’écrire par e-mail <span>↗</span></a>
+            <a href="https://www.linkedin.com/in/vivien-barbeau/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> Vivien Barbeau</span>
+      <span>Développé sobrement, hébergé sur GitHub Pages.</span>
+      <a href="#accueil">Retour en haut ↑</a>
+    </footer>
+  </body>
+</html>
