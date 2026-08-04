@@ -192,10 +192,9 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
   font-size: 0.82rem;
   font-weight: 700;
   text-decoration: none;
-  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
-.button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--green); color: white; }
 .button-primary:hover { background: var(--dark); }
 .button-secondary { border: 1px solid var(--line); background: rgba(255, 255, 255, 0.82); }
