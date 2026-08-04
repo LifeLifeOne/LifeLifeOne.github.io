@@ -409,6 +409,8 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 
 @media (max-width: 900px) {
   .site-header { padding-inline: 4vw; }
+  /* A backdrop filter traps the fixed menu inside the sticky header on mobile. */
+  .site-header.scrolled { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .menu-button { position: relative; z-index: 2; display: grid; width: 2.7rem; height: 2.7rem; place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); cursor: pointer; }
   .menu-button span:not(.sr-only) { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform 180ms ease; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
