@@ -30,6 +30,8 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 - **CI/CD et sécurité** : GitLab CI/CD, Docker, SonarCloud, Trivy, SAST et gestion des releases.
 - **Infrastructure** : Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.
 - **Observabilité** : Elasticsearch, Logstash, Kibana, Filebeat, alerting et métriques DORA.
+- **IA appliquée au développement** : ingénierie de prompts, structuration du contexte,
+  orchestration de workflows agentiques et multi-agents, skills réutilisables et validation humaine.
 
 ## Parcours
 

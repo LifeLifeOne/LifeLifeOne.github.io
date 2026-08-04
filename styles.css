@@ -351,6 +351,8 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 .skill-card span { color: var(--green); font-family: var(--mono); font-size: 0.67rem; }
 .skill-card h3 { margin: 3.5rem 0 0.7rem; font-size: 1.2rem; }
 .skill-card p { margin: 0; color: var(--muted); font-size: 0.86rem; }
+.skill-card-wide { display: grid; min-height: 0; grid-column: 1 / -1; grid-template-columns: 3rem minmax(220px, 0.75fr) 1.25fr; align-items: center; gap: 1.5rem; }
+.skill-card-wide h3 { margin: 0; }
 
 .certifications { padding-block: 9rem; }
 .certifications-heading { display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: end; gap: 8vw; }
@@ -457,6 +459,8 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
   .project-links { grid-column: 1; margin-top: 0.8rem; }
   .skills-grid { grid-template-columns: 1fr; }
   .skill-card { min-height: 205px; }
+  .skill-card-wide { display: block; min-height: 205px; }
+  .skill-card-wide h3 { margin: 3.5rem 0 0.7rem; }
   .certification-grid { grid-template-columns: 1fr; margin-top: 3rem; }
   .certification-card { min-height: 285px; }
   .certification-progress { grid-template-columns: 1fr; gap: 0.6rem; }
