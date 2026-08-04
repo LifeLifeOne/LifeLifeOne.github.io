@@ -411,11 +411,12 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
   .site-header { padding-inline: 4vw; }
   /* A backdrop filter traps the fixed menu inside the sticky header on mobile. */
   .site-header.scrolled { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .brand { position: relative; z-index: 2; }
   .menu-button { position: relative; z-index: 2; display: grid; width: 2.7rem; height: 2.7rem; place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); cursor: pointer; }
   .menu-button span:not(.sr-only) { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform 180ms ease; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
   .menu-button[aria-expanded="true"] span:nth-child(2) { transform: translateY(-3px) rotate(-45deg); }
-  .navigation { position: fixed; inset: 0; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 1.4rem; padding: 10vw; background: var(--paper); visibility: hidden; opacity: 0; transition: opacity 180ms ease, visibility 180ms ease; }
+  .navigation { position: fixed; inset: 0; z-index: 1; display: flex; overflow-y: auto; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 1.4rem; padding: clamp(7.5rem, 18vh, 9rem) 10vw 3rem; background: var(--paper); visibility: hidden; opacity: 0; transition: opacity 180ms ease, visibility 180ms ease; }
   .navigation.open { visibility: visible; opacity: 1; }
   .navigation a { font-size: clamp(1.5rem, 7vw, 2.5rem); }
   .nav-cta { margin-top: 1rem; font-size: 1rem !important; }
