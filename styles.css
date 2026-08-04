@@ -444,8 +444,8 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
   h1 { text-wrap: wrap; font-size: clamp(2.35rem, 10vw, 3rem); }
   h2 { font-size: clamp(2.2rem, 11vw, 3.3rem); }
   .hero-actions, .button { width: 100%; }
-  .hero-visual { width: 86%; }
-  .status-card { bottom: 7%; left: -8%; min-width: 250px; }
+  .hero-visual { display: grid; width: 86%; gap: 0.9rem; }
+  .status-card { position: static; width: 100%; min-width: 0; }
   .proof-strip { justify-content: flex-start; overflow-x: auto; }
   .journey, .side-projects, .certifications, .recommendations { padding-block: 6rem; }
   .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
