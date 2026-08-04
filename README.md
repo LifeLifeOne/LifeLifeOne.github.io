@@ -13,7 +13,7 @@
   <a href="https://lifelifeone.github.io/">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/vivien-barbeau/">LinkedIn</a> ·
   <a href="./assets/CV-Vivien-Barbeau.pdf">CV</a> ·
-  <a href="mailto:vivien.barbeau.contact@gmail.com">E-mail</a>
+  <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Prise%20de%20contact">E-mail</a>
 </p>
 
 ---
@@ -103,7 +103,7 @@ françaises à partir de données gouvernementales ouvertes.
 
 Les coordonnées personnelles sont masquées sur les versions publiques afin de limiter
 les risques de divulgation et de spam. Les lettres originales peuvent être communiquées
-[sur demande par e-mail](mailto:vivien.barbeau.contact@gmail.com).
+[sur demande par e-mail](mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Demande%20de%20lettre%20de%20recommandation).
 
 ## À propos de ce dépôt
 
