@@ -29,9 +29,23 @@
     <a class="skip-link" href="#contenu">Aller au contenu</a>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
-        <span>Vivien</span> <strong>BARBEAU</strong>
-      </a>
+      <div class="brand-cluster">
+        <a class="brand" href="/" aria-label="Recharger la page d'accueil">
+          <span>Vivien</span> <strong>BARBEAU</strong>
+        </a>
+        <button
+          class="availability-trigger"
+          type="button"
+          aria-label="Afficher ma disponibilité à partir d’octobre 2026"
+          data-hiring-trigger
+        >
+          <span class="availability-dot" aria-hidden="true"></span>
+          <span class="availability-label">Disponible · Oct. 2026</span>
+          <svg class="availability-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" />
+          </svg>
+        </button>
+      </div>
 
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
         <span></span><span></span>
@@ -502,5 +516,13 @@
       <span>© <span data-year></span> Vivien BARBEAU</span>
       <a href="#accueil">Retour en haut ↑</a>
     </footer>
+
+    <div class="glitch-layer" aria-hidden="true"></div>
+    <div class="hire-screen" aria-hidden="true">
+      <div class="hire-message">
+        <p>Disponible pour<br />de nouvelles opportunités.</p>
+        <time datetime="2026-10">Octobre 2026</time>
+      </div>
+    </div>
   </body>
 </html>

@@ -48,3 +48,35 @@ if (prefersReducedMotion || !("IntersectionObserver" in window)) {
 }
 
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
+
+const hireScreen = document.querySelector(".hire-screen");
+const glitchLayer = document.querySelector(".glitch-layer");
+const hiringTrigger = document.querySelector("[data-hiring-trigger]");
+
+function playHiringEffect() {
+  if (
+    document.body.classList.contains("glitch-active") ||
+    hireScreen.classList.contains("is-active")
+  ) return;
+  document.body.classList.add("glitch-active");
+}
+
+glitchLayer.addEventListener("animationend", (event) => {
+  if (event.animationName !== "glitch-flash") return;
+  document.body.classList.remove("glitch-active");
+  hireScreen.classList.add("is-active");
+  hireScreen.setAttribute("aria-hidden", "false");
+});
+
+hireScreen.addEventListener("animationend", (event) => {
+  if (event.animationName !== "hiring-screen") return;
+  hireScreen.classList.remove("is-active");
+  hireScreen.setAttribute("aria-hidden", "true");
+});
+
+hiringTrigger.addEventListener("click", (event) => {
+  closeMenu();
+  if (prefersReducedMotion) return;
+  event.preventDefault();
+  playHiringEffect();
+});
