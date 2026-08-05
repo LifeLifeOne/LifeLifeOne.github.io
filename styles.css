@@ -322,7 +322,7 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 .training-program-link { display: inline-flex; align-items: center; gap: 0.65rem; margin-top: 1rem; color: var(--green); font-size: 0.72rem; font-weight: 700; text-decoration: none; }
 .training-program-link span { padding: 0.2rem 0.45rem; border: 1px solid var(--line); border-radius: 999px; font-family: var(--mono); font-size: 0.54rem; font-weight: 500; }
 .training-program-link:hover { text-decoration: underline; text-underline-offset: 4px; }
-.professional-projects { margin-top: 1.5rem; border-top: 1px solid var(--line); }
+.professional-projects, .professional-articles { margin-top: 1.5rem; border-top: 1px solid var(--line); }
 .timeline-content .professional-projects-title { margin: 0; padding: 0.8rem 0 0.55rem; color: var(--green); font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .professional-project { display: grid; grid-template-columns: 1.5rem 1fr auto; align-items: center; gap: 0.7rem; padding: 0.85rem 0; border-top: 1px solid var(--line); text-decoration: none; }
 .professional-project > span { color: var(--green); font-family: var(--mono); font-size: 0.58rem; }
