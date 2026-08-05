@@ -510,15 +510,17 @@ body.glitch-active .glitch-layer::after { animation: tear-band-reverse 1.6s step
   animation: cursor-blink 600ms steps(1, end) infinite;
 }
 
+.hire-role,
 .hire-message time {
   display: block;
-  margin-top: 1.5rem;
-  color: var(--lime);
   font-family: var(--mono);
   font-size: clamp(0.7rem, 1.2vw, 0.9rem);
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
+
+.hire-role { margin-top: 1.5rem; color: #f8fbf7; }
+.hire-message time { margin-top: 0.45rem; color: var(--lime); }
 
 @keyframes screen-tear {
   0% { filter: contrast(1.15) saturate(0.8); transform: translate(0); }
@@ -595,7 +597,7 @@ body.glitch-active .glitch-layer::after { animation: tear-band-reverse 1.6s step
   .site-header.scrolled { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .brand-cluster { position: relative; z-index: 2; }
   .availability-trigger { height: 2.15rem; justify-content: center; padding: 0 0.65rem; background: var(--paper); }
-  .availability-dot, .availability-prefix { display: none; }
+  .availability-dot { display: none; }
   .menu-button { position: relative; z-index: 2; display: grid; width: 2.7rem; height: 2.7rem; place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); cursor: pointer; }
   .menu-button span:not(.sr-only) { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform 180ms ease; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
