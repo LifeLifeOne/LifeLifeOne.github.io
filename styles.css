@@ -16,7 +16,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { font-size: 16.5px; scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -27,7 +27,7 @@ body {
     linear-gradient(180deg, #ffffff 0, transparent 42rem),
     var(--paper);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
