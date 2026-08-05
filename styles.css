@@ -115,7 +115,7 @@ button { font: inherit; }
 .availability-trigger:hover { border-color: #b8dac4; background: var(--green-light); }
 .availability-trigger:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 .availability-dot { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: #39a66e; box-shadow: 0 0 0 4px rgba(57, 166, 110, 0.12); }
-.availability-icon { display: none; width: 1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
+.availability-label { white-space: nowrap; }
 
 .navigation { display: flex; align-items: center; gap: 1.8rem; }
 
@@ -585,9 +585,8 @@ body.glitch-active .glitch-layer::after { animation: tear-band-reverse 1.6s step
   /* A backdrop filter traps the fixed menu inside the sticky header on mobile. */
   .site-header.scrolled { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .brand-cluster { position: relative; z-index: 2; }
-  .availability-trigger { width: 2.15rem; height: 2.15rem; justify-content: center; padding: 0; background: var(--paper); }
-  .availability-dot, .availability-label { display: none; }
-  .availability-icon { display: block; }
+  .availability-trigger { height: 2.15rem; justify-content: center; padding: 0 0.65rem; background: var(--paper); }
+  .availability-dot, .availability-prefix { display: none; }
   .menu-button { position: relative; z-index: 2; display: grid; width: 2.7rem; height: 2.7rem; place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); cursor: pointer; }
   .menu-button span:not(.sr-only) { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform 180ms ease; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
