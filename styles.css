@@ -101,20 +101,38 @@ button { font: inherit; }
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 0.65rem;
-  border: 1px solid var(--line);
+  border: none;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
   color: var(--green);
   font-family: var(--mono);
   font-size: 0.55rem;
   letter-spacing: 0.04em;
-  cursor: pointer;
-  transition: border-color 180ms ease, background 180ms ease;
+  cursor: default;
+  transition: background 180ms ease;
 }
 
-.availability-trigger:hover { border-color: #b8dac4; background: var(--green-light); }
 .availability-trigger:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
-.availability-dot { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: #39a66e; box-shadow: 0 0 0 4px rgba(57, 166, 110, 0.12); }
+
+.availability-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #39a66e;
+  position: relative;
+}
+.availability-dot::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(57, 166, 110, 0.25);
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(2.2); opacity: 0; }
+}
 .availability-label { white-space: nowrap; }
 
 .navigation { display: flex; align-items: center; gap: 1.8rem; }
@@ -598,7 +616,6 @@ body.glitch-active .glitch-layer::after { animation: tear-band-reverse 1.6s step
   .site-header.scrolled { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .brand-cluster { position: relative; z-index: 2; }
   .availability-trigger { height: 2.15rem; justify-content: center; padding: 0 0.65rem; background: var(--paper); }
-  .availability-dot { display: none; }
   .menu-button { position: relative; z-index: 2; display: grid; width: 2.7rem; height: 2.7rem; place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: var(--paper); cursor: pointer; }
   .menu-button span:not(.sr-only) { display: block; width: 17px; height: 1px; background: var(--ink); transition: transform 180ms ease; }
   .menu-button[aria-expanded="true"] span:first-child { transform: translateY(3px) rotate(45deg); }
