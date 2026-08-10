@@ -115,8 +115,9 @@ button { font: inherit; }
 .availability-trigger:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 
 .availability-dot {
-  width: 0.45rem;
-  height: 0.45rem;
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #39a66e;
   position: relative;
