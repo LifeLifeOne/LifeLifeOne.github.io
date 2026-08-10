@@ -78,7 +78,7 @@ Technologies : **GitLab CI · Docker · Kubernetes · Helm · Terraform · Ansib
 ### [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete)
 
 Module contribué améliorant l’expérience des champs d’autocomplétion natifs de Drupal.
-**Près de 60 sites déclarent aujourd’hui l’utiliser selon les statistiques de la plateforme.**
+**Près de 50 sites déclarent aujourd’hui l’utiliser selon les statistiques de la plateforme.**
 
 ### [CarburantsPrix.fr](https://carburantsprix.fr)
 
