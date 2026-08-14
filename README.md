@@ -37,7 +37,7 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 
 ### Expert DevOps · OpenClassrooms · 2026
 
-Formation RNCP niveau 7 en cours : automatisation, déploiement continu,
+Formation RNCP 7 (équiv. Bac+5) en cours : automatisation, déploiement continu,
 conteneurisation, orchestration, Infrastructure as Code et cloud AWS.
 
 [Consulter le programme de la formation](https://static.oc-static.com/syllabus/2461-expert-devops-fr-fr-standard.pdf)
@@ -56,7 +56,7 @@ Projets phares auxquels j’ai contribué chez Adimeo :
 
 ### Développeur applications web · 3W Academy · 2021
 
-Formation intensive full-stack et obtention du titre RNCP niveau III de développeur web.
+Formation intensive full-stack et obtention du titre RNCP 5 (équiv. Bac+2) de développeur web.
 
 ## Projet DevOps
 
@@ -92,9 +92,9 @@ ouvertes.
 
 - **[Maîtrise de la qualité en projet web](https://directory.opquast.com/fr/certificat/OQWI5U/)** · Opquast · 875 / 1000 · valide jusqu’en septembre 2027.
 - **[Formation JavaScript avancé](https://www.humancoders.com/diplomas/204d689e1d24)** · Human Coders · 2024.
-- **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP niveau III · 3W Academy · 2021.
+- **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP 5 · équiv. Bac+2 · 3W Academy · 2021.
 - **[Écoconception numérique](./assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg)** · EduGroupe · 2025–2026.
-- **Expert DevOps** · titre RNCP niveau 7 en préparation · OpenClassrooms · 2026.
+- **Expert DevOps** · titre RNCP 7 · équiv. Bac+5 · en préparation · OpenClassrooms · 2026.
 
 ## Recommandations
 
