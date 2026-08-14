@@ -64,15 +64,10 @@
         <a class="brand" href="/" aria-label="Recharger la page d'accueil">
           <span>Vivien</span> <strong>BARBEAU</strong>
         </a>
-        <button
-          class="availability-trigger"
-          type="button"
-          aria-label="Afficher ma disponibilité à partir d’octobre 2026"
-          data-hiring-trigger
-        >
+        <p class="availability-trigger">
           <span class="availability-dot" aria-hidden="true"></span>
-          <span class="availability-label"></span>
-        </button>
+          <span class="availability-label">Dispo oct. 2026</span>
+        </p>
       </div>
 
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
@@ -103,10 +98,12 @@
           <p class="hero-intro">
             Développeur Drupal/PHP avec quatre ans d’expérience, je me spécialise
             aujourd’hui en DevOps pour relier code, qualité, sécurité et infrastructure.
+            Disponible à Nantes à partir d’octobre 2026.
           </p>
           <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Me contacter</a>
             <a class="button button-secondary" href="assets/CV-Vivien-Barbeau.pdf" download>
-              Télécharger mon CV <span aria-hidden="true">↓</span>
+              Télécharger mon CV <span class="button-pill">PDF</span>
             </a>
           </div>
         </div>
@@ -145,10 +142,10 @@
           <article class="timeline-item reveal">
             <div class="timeline-date">2026<br><span class="timeline-duration">6 mois</span></div>
             <div class="timeline-content">
-              <p class="timeline-label">Spécialisation en cours</p>
+              <p class="timeline-label">OpenClassrooms · Spécialisation en cours</p>
               <h3>Expert DevOps — RNCP 7</h3>
               <p>
-                OpenClassrooms. Automatisation, déploiement continu, conteneurisation,
+                Automatisation, déploiement continu, conteneurisation,
                 orchestration, Infrastructure as Code et cloud AWS.
               </p>
               <a
@@ -338,8 +335,10 @@
               <p class="project-type">Android · Web · Open data</p>
               <h3>CarburantsPrix.fr</h3>
               <p>
-                Application Android et site web comparant les prix de plus de 9 000 stations
-                en France à partir de données gouvernementales.
+                Application Android (Kotlin / Jetpack Compose) et site web comparant les prix
+                de plus de 9&nbsp;000 stations en France, à partir des données ouvertes du
+                ministère de l’Économie. Géolocalisation, alertes de prix, itinéraires,
+                version premium et pages locales pour plus de 4&nbsp;000 villes.
               </p>
             </div>
             <div class="project-links">
@@ -368,7 +367,7 @@
             </article>
             <article class="skill-card reveal" data-delay="1">
               <span>02</span><h3>CI/CD & sécurité</h3>
-              <p>GitLab CI/CD, Docker, SonarCloud, Trivy, SAST et gestion des releases.</p>
+              <p>GitLab CI/CD, Docker, SonarCloud, Trivy, SAST, DAST et gestion des releases.</p>
             </article>
             <article class="skill-card reveal" data-delay="2">
               <span>03</span><h3>Infrastructure</h3>
@@ -376,7 +375,7 @@
             </article>
             <article class="skill-card reveal" data-delay="3">
               <span>04</span><h3>Observabilité</h3>
-              <p>Elasticsearch, Logstash, Kibana, Filebeat, alerting et métriques DORA.</p>
+              <p>Stacks ELK et PLG (Prometheus, Loki, Grafana), alerting et métriques DORA.</p>
             </article>
             <article class="skill-card skill-card-wide reveal">
               <span>05</span><h3>IA appliquée au développement</h3>
@@ -403,7 +402,13 @@
         </div>
 
         <div class="certification-grid">
-          <article class="certification-card reveal">
+          <a
+            class="certification-card reveal"
+            href="https://directory.opquast.com/fr/certificat/OQWI5U/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="certification-tooltip" role="tooltip">Afficher le certificat</span>
             <div class="certification-topline">
               <span class="certification-year">2022</span>
               <span class="certification-state state-active">Valide</span>
@@ -412,11 +417,19 @@
             <h3>Maîtrise de la qualité en projet web</h3>
             <p class="certification-detail">
               Qualité numérique, accessibilité, performance, UX, sécurité et bonnes pratiques web.
+              Score 875 / 1000 — niveau Avancé.
             </p>
-            <p class="certification-date">Valide jusqu’en septembre 2027</p>
-          </article>
+            <p class="certification-date">Valide jusqu’en septembre 2027 · Vérifier le certificat ↗</p>
+          </a>
 
-          <article class="certification-card reveal" data-delay="1">
+          <a
+            class="certification-card reveal"
+            data-delay="1"
+            href="https://www.humancoders.com/diplomas/204d689e1d24"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="certification-tooltip" role="tooltip">Afficher le diplôme</span>
             <div class="certification-topline">
               <span class="certification-year">2024</span>
               <span class="certification-state">Délivrée</span>
@@ -426,10 +439,17 @@
             <p class="certification-detail">
               Approfondissement du langage, de ses mécanismes et des pratiques modernes de développement.
             </p>
-            <p class="certification-date">Délivrée en juin 2024</p>
-          </article>
+            <p class="certification-date">Délivrée en juin 2024 · Voir le diplôme ↗</p>
+          </a>
 
-          <article class="certification-card reveal" data-delay="2">
+          <a
+            class="certification-card reveal"
+            data-delay="2"
+            href="https://diplome.3wa.fr/barbeau-vivien"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="certification-tooltip" role="tooltip">Afficher le diplôme</span>
             <div class="certification-topline">
               <span class="certification-year">2021</span>
               <span class="certification-state">Titre obtenu</span>
@@ -439,31 +459,25 @@
             <p class="certification-detail">
               Titre professionnel de Développeur intégrateur en réalisation d’applications Web.
             </p>
-            <p class="certification-date">RNCP niveau III · septembre 2021</p>
-          </article>
+            <p class="certification-date">RNCP niveau III · septembre 2021 · Voir le diplôme ↗</p>
+          </a>
 
-          <article class="certification-card reveal" data-delay="3">
-            <div class="certification-topline">
-              <span class="certification-year">2021</span>
-              <span class="certification-state state-history">Historique</span>
-            </div>
-            <p class="certification-issuer">Tosa Certifications</p>
-            <h3>Certification TOSA PHP</h3>
-            <p class="certification-detail">
-              Évaluation et validation des compétences fondamentales en PHP.
-            </p>
-            <p class="certification-date">Validité terminée en septembre 2023</p>
-          </article>
         </div>
 
-        <div class="certification-progress certification-completed reveal">
+        <a
+          class="certification-progress certification-completed reveal"
+          href="assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span class="certification-tooltip" role="tooltip">Afficher l’attestation</span>
           <div>
             <span class="completion-mark" aria-hidden="true">✓</span>
             <p>Formation acquise</p>
           </div>
           <h3>Écoconception numérique</h3>
-          <span>EduGroupe · 2025–2026</span>
-        </div>
+          <span>EduGroupe · 2025–2026 · Voir l’attestation ↗</span>
+        </a>
 
         <div class="certification-progress reveal">
           <div>
@@ -495,54 +509,54 @@
         <div class="recommendation-list reveal" data-delay="1">
           <article class="letter-card">
             <div class="letter-identity">
-              <span aria-hidden="true">AC</span>
-              <div>
-                <h3>Adam C.</h3>
-                <p>Directeur du pôle CMS & Front · Adimeo</p>
-              </div>
+              <h3>Adam C.</h3>
+              <p>Directeur du pôle CMS & Front · Adimeo</p>
             </div>
             <a href="assets/LR%20-%20ACDW.pdf?v=8630df6" target="_blank" rel="noreferrer">
               Consulter la lettre <span aria-hidden="true">↗</span>
             </a>
+            <blockquote>
+              «&nbsp;Cette capacité à transmettre et à élever le niveau de l’équipe est une qualité rare.&nbsp;»
+            </blockquote>
           </article>
 
           <article class="letter-card">
             <div class="letter-identity">
-              <span aria-hidden="true">PW</span>
-              <div>
-                <h3>Pierre W.</h3>
-                <p>Lead Developer Drupal · Adimeo</p>
-              </div>
+              <h3>Pierre W.</h3>
+              <p>Lead Developer Drupal · Adimeo</p>
             </div>
             <a href="assets/LR%20-%20PW.pdf" target="_blank" rel="noreferrer">
               Consulter la lettre <span aria-hidden="true">↗</span>
             </a>
+            <blockquote>
+              «&nbsp;Rien n’est laissé au hasard dans son travail.&nbsp;»
+            </blockquote>
           </article>
 
           <article class="letter-card">
             <div class="letter-identity">
-              <span aria-hidden="true">TT</span>
-              <div>
-                <h3>Tommy T.</h3>
-                <p>Team Leader Drupal · AI Engineer</p>
-              </div>
+              <h3>Tommy T.</h3>
+              <p>Team Leader Drupal · AI Engineer</p>
             </div>
             <a href="assets/LR%20-%20TT.pdf" target="_blank" rel="noreferrer">
               Consulter la lettre <span aria-hidden="true">↗</span>
             </a>
+            <blockquote>
+              «&nbsp;Je recommande Vivien Barbeau sans aucune hésitation.&nbsp;»
+            </blockquote>
           </article>
 
           <article class="letter-card">
             <div class="letter-identity">
-              <span aria-hidden="true">CF</span>
-              <div>
-                <h3>Carole F.</h3>
-                <p>Consultante en transformation numérique & accessibilité</p>
-              </div>
+              <h3>Carole F.</h3>
+              <p>Consultante en transformation numérique & accessibilité</p>
             </div>
             <a href="assets/LR%20-%20CF.png" target="_blank" rel="noreferrer">
-              Voir sur LinkedIn <span aria-hidden="true">↗</span>
+              Voir la recommandation <span aria-hidden="true">↗</span>
             </a>
+            <blockquote>
+              «&nbsp;Il fait partie des meilleurs développeurs avec lesquels j’ai collaboré.&nbsp;»
+            </blockquote>
           </article>
         </div>
       </section>
@@ -564,14 +578,5 @@
       <span>© <span data-year></span> Vivien BARBEAU</span>
       <a href="#accueil">Retour en haut ↑</a>
     </footer>
-
-    <div class="glitch-layer" aria-hidden="true"></div>
-    <div class="hire-screen" aria-hidden="true">
-      <div class="hire-message">
-        <p>Disponible pour<br />de nouvelles opportunités.</p>
-        <span class="hire-role">Drupal / PHP · DevOps</span>
-        <time datetime="2026-10">Nantes · Octobre 2026</time>
-      </div>
-    </div>
   </body>
 </html>

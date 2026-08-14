@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://lifelifeone.github.io/">Portfolio</a> ·
+  <a href="https://vivienbarbeau.fr/">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/vivien-barbeau/">LinkedIn</a> ·
   <a href="./assets/CV-Vivien-Barbeau.pdf">CV</a> ·
   <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Prise%20de%20contact">E-mail</a>
@@ -27,9 +27,9 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 ## Expertise
 
 - **Développement** : Drupal, PHP, JavaScript, API, qualité et accessibilité.
-- **CI/CD et sécurité** : GitLab CI/CD, Docker, SonarCloud, Trivy, SAST et gestion des releases.
+- **CI/CD et sécurité** : GitLab CI/CD, Docker, SonarCloud, Trivy, SAST, DAST et gestion des releases.
 - **Infrastructure** : Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.
-- **Observabilité** : Elasticsearch, Logstash, Kibana, Filebeat, alerting et métriques DORA.
+- **Observabilité** : stacks ELK et PLG (Prometheus, Loki, Grafana), alerting et métriques DORA.
 - **IA appliquée au développement** : ingénierie de prompts, structuration du contexte,
   orchestration de workflows agentiques et multi-agents, skills réutilisables et validation humaine.
 
@@ -68,7 +68,7 @@ d’une application Angular / Spring Boot, de la construction à l’observabili
 `Build` → `Test` → `Security` → `Package` → `Scan` → `Release` → `Deploy` → `Monitoring`
 
 - Pipeline GitLab CI modulaire, staging automatique, production manuelle, versioning sémantique et rollback Helm.
-- SAST, détection de secrets, SonarCloud et gate Trivy bloquant les images vulnérables.
+- SAST, DAST, détection de secrets, SonarCloud et gate Trivy bloquant les images vulnérables.
 - Infrastructure avec Ansible, Terraform et Helm ; observabilité avec ELK et métriques DORA.
 
 Technologies : **GitLab CI · Docker · Kubernetes · Helm · Terraform · Ansible · Trivy · ELK**
@@ -82,18 +82,18 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 
 ### [CarburantsPrix.fr](https://carburantsprix.fr)
 
-Application Android et site web comparant les prix de plus de 9 000 stations-service
-françaises à partir de données gouvernementales ouvertes.
+Application Android (Kotlin / Jetpack Compose) et site web comparant les prix
+de plus de 9 000 stations-service françaises à partir de données gouvernementales
+ouvertes.
 
 [Consulter l’application sur Google Play](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix)
 
 ## Certifications et formations
 
-- **Maîtrise de la qualité en projet web** · Opquast · valide jusqu’en septembre 2027.
-- **Formation JavaScript avancé** · Human Coders · 2024.
-- **Développeur intégrateur web** · titre RNCP niveau III · 3W Academy · 2021.
-- **Certification TOSA PHP** · Tosa Certifications · 2021.
-- **Écoconception numérique** · EduGroupe · 2025–2026.
+- **[Maîtrise de la qualité en projet web](https://directory.opquast.com/fr/certificat/OQWI5U/)** · Opquast · 875 / 1000 · valide jusqu’en septembre 2027.
+- **[Formation JavaScript avancé](https://www.humancoders.com/diplomas/204d689e1d24)** · Human Coders · 2024.
+- **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP niveau III · 3W Academy · 2021.
+- **[Écoconception numérique](./assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg)** · EduGroupe · 2025–2026.
 - **Expert DevOps** · titre RNCP niveau 7 en préparation · OpenClassrooms · 2026.
 
 ## Recommandations
@@ -110,7 +110,7 @@ les risques de divulgation et de spam. Les lettres originales peuvent être comm
 ## À propos de ce dépôt
 
 Ce portfolio est un site statique développé sans framework ni étape de build. Il est
-publié avec GitHub Pages à l’adresse [lifelifeone.github.io](https://lifelifeone.github.io/).
+publié avec GitHub Pages à l’adresse [vivienbarbeau.fr](https://vivienbarbeau.fr/).
 
 Pour le prévisualiser localement :
 
