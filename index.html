@@ -8,6 +8,14 @@
       content="Portfolio de Vivien Barbeau, développeur web Drupal/PHP en spécialisation DevOps à Nantes."
     />
     <meta name="theme-color" content="#f5f3ec" />
+    <script>
+      (() => {
+        const theme = localStorage.getItem("theme") === "dark" ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.content = theme === "dark" ? "#161511" : "#f5f3ec";
+      })();
+    </script>
     <meta name="google-site-verification" content="mFVfOoItEAZ5bi6s2qDkciXpe2QpW_xvpOeKbpEohvU" />
     <meta property="og:title" content="Vivien BARBEAU - Développeur Web & DevOps" />
     <meta
@@ -70,11 +78,6 @@
         </p>
       </div>
 
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
-        <span></span><span></span>
-        <span class="sr-only">Ouvrir le menu</span>
-      </button>
-
       <nav id="navigation" class="navigation" aria-label="Navigation principale">
         <a href="#parcours">Parcours</a>
         <a href="#projet">DevOps</a>
@@ -83,6 +86,28 @@
         <a href="#recommandations">Recommandations</a>
         <a class="nav-cta" href="#contact">Me contacter</a>
       </nav>
+
+      <div class="header-tools">
+        <button type="button" class="theme-toggle" data-theme-toggle>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12.6 2.2a.8.8 0 0 0-.9.2 8.6 8.6 0 1 0 10 10 .8.8 0 0 0-1-.9 6.9 6.9 0 0 1-8.1-8.3Z"
+            />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6Zm0-5a.8.8 0 0 1 .8.8v1.6a.8.8 0 0 1-1.6 0V3a.8.8 0 0 1 .8-.8Zm0 16.4a.8.8 0 0 1 .8.8V21a.8.8 0 0 1-1.6 0v-1.6a.8.8 0 0 1 .8-.8Zm9-7.6a.8.8 0 0 1-.8.8h-1.6a.8.8 0 0 1 0-1.6H20a.8.8 0 0 1 .8.8ZM5.4 12a.8.8 0 0 1-.8.8H3a.8.8 0 0 1 0-1.6h1.6a.8.8 0 0 1 .8.8Zm12.8-6.2a.8.8 0 0 1 0 1.1l-1.1 1.2a.8.8 0 1 1-1.2-1.1l1.2-1.2a.8.8 0 0 1 1.1 0ZM8.1 16.9a.8.8 0 0 1 0 1.1l-1.2 1.2a.8.8 0 0 1-1.1-1.1l1.2-1.2a.8.8 0 0 1 1.1 0Zm9.9 1.2a.8.8 0 0 1-1.1 0l-1.2-1.2a.8.8 0 0 1 1.2-1.1l1.1 1.2a.8.8 0 0 1 0 1.1ZM8.1 7.1 7 5.9A.8.8 0 0 1 8.1 4.8l1.2 1.1A.8.8 0 0 1 8.1 7.1Z"
+            />
+          </svg>
+          <span class="sr-only">Activer le thème sombre</span>
+        </button>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">
+          <span></span><span></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+      </div>
     </header>
 
     <main id="contenu">
