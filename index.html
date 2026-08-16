@@ -36,20 +36,171 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Vivien Barbeau",
-      "jobTitle": "Développeur web Drupal/PHP en spécialisation DevOps",
-      "url": "https://vivienbarbeau.fr/",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nantes",
-        "addressCountry": "FR"
-      },
-      "email": "vivien.barbeau.contact@gmail.com",
-      "sameAs": [
-        "https://www.linkedin.com/in/vivien-barbeau/",
-        "https://github.com/LifeLifeOne",
-        "https://www.drupal.org/u/lifelifeone"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://vivienbarbeau.fr/#person",
+          "name": "Vivien Barbeau",
+          "givenName": "Vivien",
+          "familyName": "Barbeau",
+          "alternateName": "Vivien BARBEAU",
+          "jobTitle": "Développeur web Drupal/PHP en spécialisation DevOps",
+          "description": "Développeur Drupal/PHP avec quatre ans d’expérience, spécialisé en DevOps pour relier code, qualité, sécurité et infrastructure. Basé à Nantes, disponible à partir d’octobre 2026.",
+          "url": "https://vivienbarbeau.fr/",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://vivienbarbeau.fr/assets/vivien-barbeau.jpg",
+            "url": "https://vivienbarbeau.fr/assets/vivien-barbeau.jpg",
+            "contentUrl": "https://vivienbarbeau.fr/assets/vivien-barbeau.jpg",
+            "width": 400,
+            "height": 400,
+            "caption": "Portrait de Vivien Barbeau"
+          },
+          "email": "vivien.barbeau.contact@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nantes",
+            "addressCountry": "FR"
+          },
+          "homeLocation": {
+            "@type": "City",
+            "name": "Nantes"
+          },
+          "knowsLanguage": "fr",
+          "knowsAbout": [
+            "Drupal",
+            "PHP",
+            "JavaScript",
+            "DevOps",
+            "GitLab CI/CD",
+            "Docker",
+            "Kubernetes",
+            "Helm",
+            "Terraform",
+            "Ansible",
+            "Observabilité",
+            "Accessibilité"
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Développeur web Drupal/PHP en spécialisation DevOps",
+            "occupationLocation": {
+              "@type": "City",
+              "name": "Nantes"
+            }
+          },
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "3W Academy"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "OpenClassrooms"
+            }
+          ],
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Maîtrise de la qualité en projet web",
+              "credentialCategory": "certification",
+              "recognizedBy": {
+                "@type": "Organization",
+                "name": "Opquast"
+              },
+              "url": "https://directory.opquast.com/fr/certificat/OQWI5U/",
+              "validUntil": "2027-09"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Développeur intégrateur en réalisation d’applications Web",
+              "credentialCategory": "degree",
+              "recognizedBy": {
+                "@type": "EducationalOrganization",
+                "name": "3W Academy"
+              },
+              "url": "https://diplome.3wa.fr/barbeau-vivien",
+              "educationalLevel": "RNCP 5"
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/vivien-barbeau/",
+            "https://github.com/LifeLifeOne",
+            "https://www.drupal.org/u/lifelifeone"
+          ],
+          "workExample": [
+            {
+              "@type": "SoftwareSourceCode",
+              "name": "UX Enhanced Autocomplete",
+              "description": "Module Drupal open source améliorant l’autocomplétion native.",
+              "url": "https://www.drupal.org/project/ux_enhanced_autocomplete",
+              "codeRepository": "https://git.drupalcode.org/project/ux_enhanced_autocomplete",
+              "programmingLanguage": "PHP"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "CarburantsPrix.fr",
+              "description": "Application Android et site web comparant les prix de plus de 9 000 stations-service en France.",
+              "url": "https://carburantsprix.fr",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "Android",
+              "installUrl": "https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix"
+            },
+            {
+              "@type": "SoftwareSourceCode",
+              "name": "MicroCRM",
+              "description": "Industrialisation DevOps d’une application Angular / Spring Boot, de la construction à l’observabilité.",
+              "url": "https://gitlab.com/openclassrooms5651214/openclassrooms-p6",
+              "codeRepository": "https://gitlab.com/openclassrooms5651214/openclassrooms-p6"
+            }
+          ],
+          "subjectOf": [
+            {
+              "@type": "Article",
+              "headline": "Lazy Builder : créer des contenus ultra-dynamiques dans Drupal",
+              "url": "https://www.adimeo.com/blog-technique/drupal-lazy-builder",
+              "datePublished": "2024-01"
+            },
+            {
+              "@type": "Article",
+              "headline": "Améliorer l’autocomplétion de Drupal pour une meilleure expérience utilisateur",
+              "url": "https://www.adimeo.com/blog-technique/ameliorer-autocompletion-drupal-pour-meilleure-experience-utilisateur",
+              "datePublished": "2025-05"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://vivienbarbeau.fr/#website",
+          "url": "https://vivienbarbeau.fr/",
+          "name": "Vivien Barbeau",
+          "alternateName": "Vivien BARBEAU - Développeur Web & DevOps",
+          "description": "Portfolio de Vivien Barbeau, développeur web Drupal/PHP en spécialisation DevOps à Nantes.",
+          "inLanguage": "fr",
+          "publisher": {
+            "@id": "https://vivienbarbeau.fr/#person"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vivienbarbeau.fr/#webpage",
+          "url": "https://vivienbarbeau.fr/",
+          "name": "Vivien BARBEAU - Développeur Web & DevOps",
+          "description": "Portfolio de Vivien Barbeau, développeur web Drupal/PHP en spécialisation DevOps à Nantes.",
+          "inLanguage": "fr",
+          "isPartOf": {
+            "@id": "https://vivienbarbeau.fr/#website"
+          },
+          "about": {
+            "@id": "https://vivienbarbeau.fr/#person"
+          },
+          "mainEntity": {
+            "@id": "https://vivienbarbeau.fr/#person"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://vivienbarbeau.fr/assets/vivien-barbeau.jpg"
+          }
+        }
       ]
     }
     </script>
