@@ -27,7 +27,7 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 ## Expertise
 
 - **Développement** : Drupal, PHP, JavaScript, API, qualité et accessibilité.
-- **CI/CD et sécurité** : GitLab CI/CD, Docker, SonarCloud, Trivy, SAST, DAST et gestion des releases.
+- **CI/CD et sécurité** : GitLab CI/CD, Docker, SonarCloud, Trivy, Gitleaks, pre-commit, SAST, DAST et gestion des releases.
 - **Infrastructure** : Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.
 - **Observabilité** : stacks ELK et PLG (Prometheus, Loki, Grafana), alerting et métriques DORA.
 - **IA appliquée au développement** : ingénierie de prompts, structuration du contexte,
@@ -68,10 +68,10 @@ d’une application Angular / Spring Boot, de la construction à l’observabili
 `Build` → `Test` → `Security` → `Package` → `Scan` → `Release` → `Deploy` → `Monitoring`
 
 - Pipeline GitLab CI modulaire, staging automatique, production manuelle, versioning sémantique et rollback Helm.
-- SAST, DAST, détection de secrets, SonarCloud et gate Trivy bloquant les images vulnérables.
+- SAST, DAST, Gitleaks en pre-commit et en CI, SonarCloud et gate Trivy bloquant les images vulnérables.
 - Infrastructure avec Ansible, Terraform et Helm ; observabilité avec ELK et métriques DORA.
 
-Technologies : **GitLab CI · Docker · Kubernetes · Helm · Terraform · Ansible · Trivy · ELK**
+Technologies : **GitLab CI · Docker · Kubernetes · Helm · Terraform · Ansible · Trivy · Gitleaks · pre-commit · ELK**
 
 ## Projets personnels et open source
 
