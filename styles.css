@@ -681,6 +681,16 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 }
 .timeline-fun-fact .timeline-date { padding-top: 0.15rem; }
 .timeline-fun-fact .timeline-label { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; }
+.fun-fact-disclosure > summary { list-style: none; }
+.fun-fact-disclosure > summary::-webkit-details-marker { display: none; }
+.fun-fact-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+}
+.fun-fact-summary:focus-visible { outline: 2px solid var(--green); outline-offset: 0.4rem; border-radius: 0.25rem; }
 .fun-fact-badge {
   display: inline-flex;
   align-items: center;
@@ -691,6 +701,39 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
   color: var(--surface);
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+.fun-fact-toggle {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.55rem 0.45rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--green) 32%, var(--line));
+  border-radius: 999px;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+.fun-fact-summary:hover .fun-fact-toggle { border-color: var(--green); background: var(--green); color: var(--surface); }
+.fun-fact-toggle-close { display: none; }
+.fun-fact-toggle-icon { display: grid; width: 1.1rem; height: 1.1rem; place-items: center; font-size: 1rem; line-height: 1; transition: transform 220ms ease; }
+.fun-fact-disclosure[open] .fun-fact-toggle-open { display: none; }
+.fun-fact-disclosure[open] .fun-fact-toggle-close { display: inline; }
+.fun-fact-disclosure[open] .fun-fact-toggle-icon { transform: rotate(45deg); }
+.fun-fact-panel {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid color-mix(in srgb, var(--green) 20%, var(--line));
+  animation: fun-fact-reveal 220ms ease both;
+}
+.fun-fact-panel h3 { margin-top: 0; }
+@keyframes fun-fact-reveal {
+  from { opacity: 0; transform: translateY(-0.35rem); }
+  to { opacity: 1; transform: translateY(0); }
 }
 .timeline-fun-fact .timeline-content strong { color: var(--ink); }
 .fun-fact-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 1.25rem; align-items: start; }
