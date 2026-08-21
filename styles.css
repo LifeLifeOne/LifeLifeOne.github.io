@@ -242,11 +242,11 @@ html[data-pipeline-nav="hidden"] .pipeline-nav {
   z-index: 40;
   top: 50%;
   right: 0;
-  width: 22px;
-  height: 48px;
+  width: 32px;
+  height: 64px;
   border-right: 0;
   border-radius: 12px 0 0 12px;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -1091,8 +1091,8 @@ html[data-theme="dark"] .site-footer a {
     top: auto;
     right: 0;
     bottom: max(0.75rem, env(safe-area-inset-bottom));
-    width: 22px;
-    height: 42px;
+    width: 32px;
+    height: 52px;
     transform: translateX(100%);
   }
   html[data-pipeline-nav="hidden"] .pipeline-nav-restore { transform: none; }

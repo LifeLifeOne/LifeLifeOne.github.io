@@ -204,7 +204,7 @@ applyPipelineVisibility(document.documentElement.dataset.pipelineNav === "visibl
 
 function syncPipelineDefaultWithViewport() {
   if (localStorage.getItem("pipeline-nav")) return;
-  applyPipelineVisibility(!window.matchMedia("(max-width: 900px)").matches);
+  applyPipelineVisibility(false);
 }
 
 window.addEventListener("resize", syncPipelineDefaultWithViewport);

@@ -12,9 +12,7 @@
       (() => {
         const theme = localStorage.getItem("theme") === "dark" ? "dark" : "light";
         const pipelineNavPreference = localStorage.getItem("pipeline-nav");
-        const pipelineNavDefault = window.matchMedia("(max-width: 900px)").matches
-          ? "hidden"
-          : "visible";
+        const pipelineNavDefault = "hidden";
         document.documentElement.dataset.theme = theme;
         document.documentElement.dataset.pipelineNav =
           pipelineNavPreference === "hidden" || pipelineNavPreference === "visible"
@@ -224,8 +222,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260821d" />
-    <script src="script.js?v=20260821d" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260821e" />
+    <script src="script.js?v=20260821f" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
