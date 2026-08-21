@@ -149,10 +149,10 @@ function focusAfterPipelineTransition(element, expectedState) {
   }, prefersReducedMotion ? 0 : 200);
 }
 
-function setPipelineVisibility(isVisible) {
+function setPipelineVisibility(isVisible, { focusActive = isVisible } = {}) {
   applyPipelineVisibility(isVisible);
   localStorage.setItem("pipeline-nav", isVisible ? "visible" : "hidden");
-  if (isVisible) {
+  if (isVisible && focusActive) {
     const activeLink = pipelineLinks.find((link) => link.classList.contains("is-active")) || pipelineLinks[0];
     focusAfterPipelineTransition(activeLink, "visible");
   }
@@ -163,7 +163,9 @@ pipelineClose.addEventListener("click", () => {
   focusAfterPipelineTransition(pipelineRestore, "hidden");
 });
 
-pipelineRestore.addEventListener("click", () => setPipelineVisibility(true));
+pipelineRestore.addEventListener("click", (event) => {
+  setPipelineVisibility(true, { focusActive: event.detail === 0 });
+});
 
 pipelineLinks.forEach((link, index) => {
   link.addEventListener("focus", () => {

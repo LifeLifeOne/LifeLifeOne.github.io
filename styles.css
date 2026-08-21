@@ -426,9 +426,14 @@ html[data-pipeline-nav="hidden"] .pipeline-nav-restore {
 
 .pipeline-nav a:hover .pipeline-tooltip,
 .pipeline-nav a:focus-visible .pipeline-tooltip,
-.pipeline-nav:not(:focus-within) a.is-active .pipeline-tooltip {
+.pipeline-nav a.is-active .pipeline-tooltip {
   opacity: 1;
   transform: translate(0, -50%);
+}
+
+.pipeline-nav:has(:focus-visible) a.is-active:not(:focus-visible):not(:hover) .pipeline-tooltip {
+  opacity: 0;
+  transform: translate(0.35rem, -50%);
 }
 
 .navigation { display: flex; align-items: center; gap: 1.8rem; margin-left: auto; }
