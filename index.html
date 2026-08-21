@@ -11,7 +11,15 @@
     <script>
       (() => {
         const theme = localStorage.getItem("theme") === "dark" ? "dark" : "light";
+        const pipelineNavPreference = localStorage.getItem("pipeline-nav");
+        const pipelineNavDefault = window.matchMedia("(max-width: 900px)").matches
+          ? "hidden"
+          : "visible";
         document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.pipelineNav =
+          pipelineNavPreference === "hidden" || pipelineNavPreference === "visible"
+            ? pipelineNavPreference
+            : pipelineNavDefault;
         const meta = document.querySelector('meta[name="theme-color"]');
         if (meta) meta.content = theme === "dark" ? "#161511" : "#f5f3ec";
       })();
@@ -228,7 +236,9 @@
           <span>Vivien</span> <strong>BARBEAU</strong>
         </a>
         <p class="availability-trigger">
-          <span class="availability-dot" aria-hidden="true"></span>
+          <span class="availability-icon" aria-hidden="true">
+            <img src="/assets/favicon.svg" alt="" />
+          </span>
           <span class="availability-label">Dispo oct. 2026</span>
         </p>
       </div>
@@ -264,6 +274,31 @@
         </button>
       </div>
     </header>
+
+    <nav class="pipeline-nav" aria-label="Sommaire de la page" data-pipeline-nav>
+      <button class="pipeline-nav-close" type="button" data-pipeline-close>
+        <span aria-hidden="true">×</span>
+        <span class="sr-only">Masquer le sommaire</span>
+        <span class="pipeline-control-tooltip" aria-hidden="true">Masquer le sommaire</span>
+      </button>
+      <span class="pipeline-nav-title" aria-hidden="true">Pipeline</span>
+      <span class="pipeline-mobile-label" data-pipeline-mobile-label aria-hidden="true"></span>
+      <ol>
+        <li><a href="#accueil" data-pipeline-label="Accueil"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Accueil</span></a></li>
+        <li><a href="#parcours" data-pipeline-label="Parcours"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Parcours</span></a></li>
+        <li><a href="#projet" data-pipeline-label="Projet DevOps"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Projet DevOps</span></a></li>
+        <li><a href="#projets" data-pipeline-label="Projets personnels"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Projets personnels</span></a></li>
+        <li><a href="#competences" data-pipeline-label="Compétences"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Compétences</span></a></li>
+        <li><a href="#certifications" data-pipeline-label="Certifications"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Certifications</span></a></li>
+        <li><a href="#recommandations" data-pipeline-label="Recommandations"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Recommandations</span></a></li>
+        <li><a href="#contact" data-pipeline-label="Contact"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Contact</span></a></li>
+      </ol>
+    </nav>
+    <button class="pipeline-nav-restore" type="button" data-pipeline-restore>
+      <span aria-hidden="true">‹</span>
+      <span class="sr-only">Afficher le sommaire</span>
+      <span class="pipeline-control-tooltip" aria-hidden="true">Afficher le sommaire</span>
+    </button>
 
     <main id="contenu">
       <section class="hero section" id="accueil">
@@ -533,7 +568,7 @@
         </div>
       </section>
 
-      <section class="skills-section">
+      <section class="skills-section" id="competences">
         <div class="section skills-inner">
           <div class="section-heading reveal">
             <p class="eyebrow"><span></span>Compétences</p>

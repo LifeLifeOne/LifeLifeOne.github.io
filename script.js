@@ -67,3 +67,86 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", next);
   applyTheme(next);
 });
+
+const pipelineLinks = [...document.querySelectorAll("nav[data-pipeline-nav] a")];
+const pipelineSections = pipelineLinks.map((link) => document.querySelector(link.hash));
+const pipelineList = document.querySelector("nav[data-pipeline-nav] ol");
+const pipelineMobileLabel = document.querySelector("[data-pipeline-mobile-label]");
+let pipelineTicking = false;
+let previousPipelineIndex = -1;
+
+function centerMobilePipelineJob(link) {
+  if (!window.matchMedia("(max-width: 900px)").matches) return;
+  const linkCenter = link.parentElement.offsetLeft + link.offsetLeft + link.offsetWidth / 2;
+  const targetLeft = linkCenter - pipelineList.clientWidth / 2;
+  pipelineList.scrollTo({
+    left: targetLeft,
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+  });
+}
+
+function updatePipeline() {
+  const viewportMarker = window.scrollY + window.innerHeight * 0.42;
+  const atPageEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+  let activeIndex = atPageEnd ? pipelineSections.length - 1 : 0;
+
+  pipelineSections.forEach((section, index) => {
+    if (section && section.offsetTop <= viewportMarker) activeIndex = index;
+  });
+
+  pipelineLinks.forEach((link, index) => {
+    const label = link.dataset.pipelineLabel;
+    const state = index < activeIndex ? "terminé" : index === activeIndex ? "en cours" : "non exécuté";
+    link.classList.toggle("is-complete", index < activeIndex);
+    link.classList.toggle("is-active", index === activeIndex);
+    link.toggleAttribute("aria-current", index === activeIndex);
+    link.setAttribute("aria-label", `${label} — job ${state}`);
+  });
+
+  pipelineMobileLabel.textContent = pipelineLinks[activeIndex].dataset.pipelineLabel;
+  if (activeIndex !== previousPipelineIndex) {
+    centerMobilePipelineJob(pipelineLinks[activeIndex]);
+    previousPipelineIndex = activeIndex;
+  }
+
+  pipelineTicking = false;
+}
+
+function requestPipelineUpdate() {
+  if (pipelineTicking) return;
+  pipelineTicking = true;
+  window.requestAnimationFrame(updatePipeline);
+}
+
+updatePipeline();
+window.addEventListener("scroll", requestPipelineUpdate, { passive: true });
+window.addEventListener("resize", requestPipelineUpdate);
+
+const pipelineClose = document.querySelector("[data-pipeline-close]");
+const pipelineRestore = document.querySelector("[data-pipeline-restore]");
+
+function setPipelineVisibility(isVisible) {
+  const state = isVisible ? "visible" : "hidden";
+  document.documentElement.dataset.pipelineNav = state;
+  localStorage.setItem("pipeline-nav", state);
+  if (isVisible) {
+    (pipelineLinks.find((link) => link.classList.contains("is-active")) || pipelineLinks[0])
+      ?.focus({ preventScroll: true });
+  }
+}
+
+pipelineClose.addEventListener("click", () => {
+  setPipelineVisibility(false);
+  pipelineRestore.focus({ preventScroll: true });
+});
+
+pipelineRestore.addEventListener("click", () => setPipelineVisibility(true));
+
+function syncPipelineDefaultWithViewport() {
+  if (localStorage.getItem("pipeline-nav")) return;
+  document.documentElement.dataset.pipelineNav = window.matchMedia("(max-width: 900px)").matches
+    ? "hidden"
+    : "visible";
+}
+
+window.addEventListener("resize", syncPipelineDefaultWithViewport);
