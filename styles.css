@@ -327,6 +327,11 @@ html[data-pipeline-nav="hidden"] .pipeline-nav-restore {
   text-decoration: none;
 }
 
+.pipeline-nav a:focus-visible {
+  outline-width: 3px;
+  outline-offset: 3px;
+}
+
 .pipeline-job-icon {
   position: relative;
   display: grid;
@@ -421,7 +426,7 @@ html[data-pipeline-nav="hidden"] .pipeline-nav-restore {
 
 .pipeline-nav a:hover .pipeline-tooltip,
 .pipeline-nav a:focus-visible .pipeline-tooltip,
-.pipeline-nav a.is-active .pipeline-tooltip {
+.pipeline-nav:not(:focus-within) a.is-active .pipeline-tooltip {
   opacity: 1;
   transform: translate(0, -50%);
 }

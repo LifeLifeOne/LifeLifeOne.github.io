@@ -68,7 +68,8 @@ themeToggle.addEventListener("click", () => {
   applyTheme(next);
 });
 
-const pipelineLinks = [...document.querySelectorAll("nav[data-pipeline-nav] a")];
+const pipelineNav = document.querySelector("nav[data-pipeline-nav]");
+const pipelineLinks = [...pipelineNav.querySelectorAll("a")];
 const pipelineSections = pipelineLinks.map((link) => document.querySelector(link.hash));
 const pipelineList = document.querySelector("nav[data-pipeline-nav] ol");
 const pipelineMobileLabel = document.querySelector("[data-pipeline-mobile-label]");
@@ -99,7 +100,8 @@ function updatePipeline() {
     const state = index < activeIndex ? "terminé" : index === activeIndex ? "en cours" : "non exécuté";
     link.classList.toggle("is-complete", index < activeIndex);
     link.classList.toggle("is-active", index === activeIndex);
-    link.toggleAttribute("aria-current", index === activeIndex);
+    if (index === activeIndex) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
     link.setAttribute("aria-label", `${label} — job ${state}`);
   });
 
@@ -125,28 +127,84 @@ window.addEventListener("resize", requestPipelineUpdate);
 const pipelineClose = document.querySelector("[data-pipeline-close]");
 const pipelineRestore = document.querySelector("[data-pipeline-restore]");
 
-function setPipelineVisibility(isVisible) {
+function applyPipelineVisibility(isVisible) {
   const state = isVisible ? "visible" : "hidden";
   document.documentElement.dataset.pipelineNav = state;
-  localStorage.setItem("pipeline-nav", state);
+  pipelineNav.toggleAttribute("inert", !isVisible);
+  pipelineRestore.toggleAttribute("inert", isVisible);
   if (isVisible) {
-    (pipelineLinks.find((link) => link.classList.contains("is-active")) || pipelineLinks[0])
-      ?.focus({ preventScroll: true });
+    pipelineNav.removeAttribute("aria-hidden");
+    pipelineRestore.setAttribute("aria-hidden", "true");
+  } else {
+    pipelineNav.setAttribute("aria-hidden", "true");
+    pipelineRestore.removeAttribute("aria-hidden");
+  }
+}
+
+function focusAfterPipelineTransition(element, expectedState) {
+  window.setTimeout(() => {
+    if (document.documentElement.dataset.pipelineNav === expectedState) {
+      element?.focus({ preventScroll: true });
+    }
+  }, prefersReducedMotion ? 0 : 200);
+}
+
+function setPipelineVisibility(isVisible) {
+  applyPipelineVisibility(isVisible);
+  localStorage.setItem("pipeline-nav", isVisible ? "visible" : "hidden");
+  if (isVisible) {
+    const activeLink = pipelineLinks.find((link) => link.classList.contains("is-active")) || pipelineLinks[0];
+    focusAfterPipelineTransition(activeLink, "visible");
   }
 }
 
 pipelineClose.addEventListener("click", () => {
   setPipelineVisibility(false);
-  pipelineRestore.focus({ preventScroll: true });
+  focusAfterPipelineTransition(pipelineRestore, "hidden");
 });
 
 pipelineRestore.addEventListener("click", () => setPipelineVisibility(true));
 
+pipelineLinks.forEach((link, index) => {
+  link.addEventListener("focus", () => {
+    pipelineMobileLabel.textContent = link.dataset.pipelineLabel;
+    centerMobilePipelineJob(link);
+  });
+
+  link.addEventListener("keydown", (event) => {
+    if (event.key === " " || event.key === "Spacebar") {
+      event.preventDefault();
+      link.click();
+      window.requestAnimationFrame(() => link.focus({ preventScroll: true }));
+      return;
+    }
+
+    const previousKeys = ["ArrowUp", "ArrowLeft"];
+    const nextKeys = ["ArrowDown", "ArrowRight"];
+    let targetIndex = null;
+
+    if (previousKeys.includes(event.key)) targetIndex = (index - 1 + pipelineLinks.length) % pipelineLinks.length;
+    if (nextKeys.includes(event.key)) targetIndex = (index + 1) % pipelineLinks.length;
+    if (event.key === "Home") targetIndex = 0;
+    if (event.key === "End") targetIndex = pipelineLinks.length - 1;
+    if (targetIndex === null) return;
+
+    event.preventDefault();
+    pipelineLinks[targetIndex].focus({ preventScroll: true });
+  });
+});
+
+pipelineNav.addEventListener("focusout", (event) => {
+  if (pipelineNav.contains(event.relatedTarget)) return;
+  const activeLink = pipelineLinks.find((link) => link.classList.contains("is-active"));
+  if (activeLink) pipelineMobileLabel.textContent = activeLink.dataset.pipelineLabel;
+});
+
+applyPipelineVisibility(document.documentElement.dataset.pipelineNav === "visible");
+
 function syncPipelineDefaultWithViewport() {
   if (localStorage.getItem("pipeline-nav")) return;
-  document.documentElement.dataset.pipelineNav = window.matchMedia("(max-width: 900px)").matches
-    ? "hidden"
-    : "visible";
+  applyPipelineVisibility(!window.matchMedia("(max-width: 900px)").matches);
 }
 
 window.addEventListener("resize", syncPipelineDefaultWithViewport);
