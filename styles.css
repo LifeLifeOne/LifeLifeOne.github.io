@@ -487,6 +487,17 @@ html[data-theme="dark"] .status-card {
   margin-inline: auto;
 }
 
+@media (min-width: 1101px) {
+  .section {
+    transition: width 180ms ease, transform 180ms ease;
+  }
+
+  html[data-pipeline-nav="visible"] .section {
+    width: min(calc(100% - 8vw - 6rem), var(--max-width));
+    transform: translateX(-3rem);
+  }
+}
+
 .hero {
   display: grid;
   min-height: min(780px, calc(100vh - 75px));
