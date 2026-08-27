@@ -12,7 +12,8 @@
 <p align="center">
   <a href="https://vivienbarbeau.fr/">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/vivien-barbeau/">LinkedIn</a> ·
-  <a href="./assets/CV-Vivien-Barbeau.pdf">CV</a> ·
+  <a href="./assets/CV_Vivien_BARBEAU_Drupal_PHP.pdf">CV Drupal / PHP</a> ·
+  <a href="./assets/CV_Vivien_BARBEAU_DevOps.pdf">CV DevOps junior</a> ·
   <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Prise%20de%20contact">E-mail</a>
 </p>
 
