@@ -137,6 +137,7 @@
           "workExample": [
             {
               "@type": "SoftwareSourceCode",
+              "@id": "https://www.drupal.org/project/ux_enhanced_autocomplete",
               "name": "UX Enhanced Autocomplete",
               "description": "Module Drupal open source améliorant l’autocomplétion native.",
               "url": "https://www.drupal.org/project/ux_enhanced_autocomplete",
@@ -159,20 +160,6 @@
               "url": "https://gitlab.com/openclassrooms5651214/openclassrooms-p6",
               "codeRepository": "https://gitlab.com/openclassrooms5651214/openclassrooms-p6"
             }
-          ],
-          "subjectOf": [
-            {
-              "@type": "Article",
-              "headline": "Lazy Builder : créer des contenus ultra-dynamiques dans Drupal",
-              "url": "https://www.adimeo.com/blog-technique/drupal-lazy-builder",
-              "datePublished": "2024-01"
-            },
-            {
-              "@type": "Article",
-              "headline": "Améliorer l’autocomplétion de Drupal pour une meilleure expérience utilisateur",
-              "url": "https://www.adimeo.com/blog-technique/ameliorer-autocompletion-drupal-pour-meilleure-experience-utilisateur",
-              "datePublished": "2025-05"
-            }
           ]
         },
         {
@@ -188,7 +175,7 @@
           }
         },
         {
-          "@type": "WebPage",
+          "@type": "ProfilePage",
           "@id": "https://vivienbarbeau.fr/#webpage",
           "url": "https://vivienbarbeau.fr/",
           "name": "Vivien BARBEAU - Développeur Web & DevOps",
@@ -203,6 +190,33 @@
           "mainEntity": {
             "@id": "https://vivienbarbeau.fr/#person"
           },
+          "hasPart": [
+            {
+              "@type": "Article",
+              "@id": "https://www.adimeo.com/blog-technique/drupal-lazy-builder",
+              "headline": "Lazy Builder : créer des contenus ultra-dynamiques dans Drupal",
+              "url": "https://www.adimeo.com/blog-technique/drupal-lazy-builder",
+              "datePublished": "2024-01-22",
+              "inLanguage": "fr",
+              "author": {
+                "@id": "https://vivienbarbeau.fr/#person"
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://www.adimeo.com/blog-technique/ameliorer-autocompletion-drupal-pour-meilleure-experience-utilisateur",
+              "headline": "Améliorer l’autocomplétion de Drupal pour une meilleure expérience utilisateur",
+              "url": "https://www.adimeo.com/blog-technique/ameliorer-autocompletion-drupal-pour-meilleure-experience-utilisateur",
+              "datePublished": "2025-05-20",
+              "inLanguage": "fr",
+              "about": {
+                "@id": "https://www.drupal.org/project/ux_enhanced_autocomplete"
+              },
+              "contributor": {
+                "@id": "https://vivienbarbeau.fr/#person"
+              }
+            }
+          ],
           "primaryImageOfPage": {
             "@id": "https://vivienbarbeau.fr/assets/vivien-barbeau.jpg"
           }
