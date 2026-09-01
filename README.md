@@ -81,14 +81,6 @@ Technologies : **GitLab CI · Docker · Kubernetes · Helm · Terraform · Ansib
 Module contribué améliorant l’expérience des champs d’autocomplétion natifs de Drupal.
 **Près de 50 sites déclarent aujourd’hui l’utiliser selon les statistiques de la plateforme.**
 
-### [CarburantsPrix.fr](https://carburantsprix.fr)
-
-Application Android (Kotlin / Jetpack Compose) et site web comparant les prix
-de plus de 9 000 stations-service françaises à partir de données gouvernementales
-ouvertes.
-
-[Consulter l’application sur Google Play](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix)
-
 ## Certifications et formations
 
 - **[Maîtrise de la qualité en projet web](https://directory.opquast.com/fr/certificat/OQWI5U/)** · Opquast · 875 / 1000 · valide jusqu’en septembre 2027.
