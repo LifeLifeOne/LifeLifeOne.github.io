@@ -21,8 +21,8 @@
 
 > Je développe le web. J’industrialise sa livraison.
 
-Développeur Drupal/PHP avec quatre ans d’expérience, je me spécialise aujourd’hui
-en DevOps pour relier code, qualité, sécurité et infrastructure. Mon parcours me
+Développeur Drupal/PHP, je me spécialise aujourd’hui en DevOps pour relier code,
+qualité, sécurité et infrastructure. Mon parcours me
 permet d’aborder un produit de bout en bout, de son développement à son exploitation.
 
 ## Expertise
