@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./assets/vivien-barbeau.jpg" width="160" alt="Portrait de Vivien Barbeau">
+  <img src="./assets/vivien-barbeau.jpg" width="160" alt="Portrait de Vivien BARBEAU">
 </p>
 
-<h1 align="center">Vivien Barbeau</h1>
+<h1 align="center">Vivien BARBEAU</h1>
 
 <p align="center">
   <strong>Développeur Drupal / PHP · Spécialisation DevOps</strong><br>
