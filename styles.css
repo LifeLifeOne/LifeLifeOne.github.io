@@ -760,9 +760,9 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
   background: var(--surface);
   color: var(--green);
   text-decoration: none;
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition: border-color 180ms ease;
 }
-.fun-fact-preview:hover { border-color: var(--green); transform: translateY(-2px); }
+.fun-fact-preview:hover { border-color: var(--green); }
 .fun-fact-preview img { width: 100%; }
 .fun-fact-preview span {
   display: flex;
