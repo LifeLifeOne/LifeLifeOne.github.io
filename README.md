@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Développeur Drupal / PHP · Spécialisation DevOps</strong><br>
-  Nantes, France
+  Nantes · Hybride · Full remote · Mobilité France
 </p>
 
 <p align="center">
