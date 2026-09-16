@@ -36,7 +36,7 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 
 ## Parcours
 
-### Expert DevOps · OpenClassrooms · 2026
+### Ingénieur DevOps · OpenClassrooms · 2026
 
 Formation RNCP 7 (équiv. Bac+5) en cours : automatisation, déploiement continu,
 conteneurisation, orchestration, Infrastructure as Code et cloud AWS.
@@ -63,7 +63,7 @@ Formation intensive full-stack et obtention du titre RNCP 5 (équiv. Bac+2) de d
 
 ### [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6)
 
-Projet réalisé dans le cadre de la formation Expert DevOps : industrialisation complète
+Projet réalisé dans le cadre de la formation Ingénieur DevOps : industrialisation complète
 d’une application Angular / Spring Boot, de la construction à l’observabilité.
 
 `Build` → `Test` → `Security` → `Package` → `Scan` → `Release` → `Deploy` → `Monitoring`
@@ -87,7 +87,7 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 - **[Formation JavaScript avancé](https://www.humancoders.com/diplomas/204d689e1d24)** · Human Coders · 2024.
 - **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP 5 · équiv. Bac+2 · 3W Academy · 2021.
 - **[Écoconception numérique](./assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg)** · EduGroupe · 2025–2026.
-- **Expert DevOps** · titre RNCP 7 · équiv. Bac+5 · en préparation · OpenClassrooms · 2026.
+- **Ingénieur DevOps** · titre RNCP 7 · équiv. Bac+5 · en préparation · OpenClassrooms · 2026.
 
 ## Recommandations
 
