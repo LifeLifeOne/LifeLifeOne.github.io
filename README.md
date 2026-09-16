@@ -31,6 +31,8 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 - **CI/CD et sécurité** : GitLab CI/CD, Docker, SonarCloud, Trivy, Gitleaks, pre-commit, SAST, DAST et gestion des releases.
 - **Infrastructure** : Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.
 - **Observabilité** : stacks ELK et PLG (Prometheus, Loki, Grafana), alerting et métriques DORA.
+- **Pilotage et agilité** : gestion de projet, coordination d’équipe, méthodes agiles,
+  animation des rituels Scrum et mise en pratique du rôle de Scrum Master.
 - **IA appliquée au développement** : ingénierie de prompts, structuration du contexte,
   orchestration de workflows agentiques et multi-agents, skills réutilisables et validation humaine.
 
@@ -39,7 +41,9 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 ### Ingénieur DevOps · OpenClassrooms · 2026
 
 Formation RNCP 7 (équiv. Bac+5) en cours : automatisation, déploiement continu,
-conteneurisation, orchestration, Infrastructure as Code et cloud AWS.
+conteneurisation, orchestration, Infrastructure as Code et cloud AWS. Le cursus comprend
+également des projets consacrés au pilotage, au management d’équipe et à la mise en
+pratique du rôle de Scrum Master.
 
 [Consulter le programme de la formation](https://static.oc-static.com/syllabus/2461-expert-devops-fr-fr-standard.pdf)
 
