@@ -63,20 +63,36 @@ Projets phares auxquels j’ai contribué chez Adimeo :
 
 Formation intensive full-stack et obtention du titre RNCP 5 (équiv. Bac+2) de développeur web.
 
-## Projet DevOps
+## Projets de formation DevOps
+
+Ces trois projets réalisés durant la formation Ingénieur DevOps couvrent des dimensions
+complémentaires : automatisation, pilotage agile et transformation d’un système d’information.
 
 ### [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6)
 
-Projet réalisé dans le cadre de la formation Ingénieur DevOps : industrialisation complète
-d’une application Angular / Spring Boot, de la construction à l’observabilité.
-
-`Build` → `Test` → `Security` → `Package` → `Scan` → `Release` → `Deploy` → `Monitoring`
+Industrialisation complète d’une application Angular / Spring Boot, de la construction à l’observabilité.
 
 - Pipeline GitLab CI modulaire, staging automatique, production manuelle, versioning sémantique et rollback Helm.
 - SAST, DAST, Gitleaks en pre-commit et en CI, SonarCloud et gate Trivy bloquant les images vulnérables.
 - Infrastructure avec Ansible, Terraform et Helm ; observabilité avec ELK et métriques DORA.
 
-Technologies : **GitLab CI · Docker · Kubernetes · Helm · Terraform · Ansible · Trivy · Gitleaks · pre-commit · ELK**
+### [CATASTERRE](https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b)
+
+Pilotage d’une transformation DevOps de 12 semaines pour rapprocher développement, opérations et qualité.
+
+- Structuration de 19 besoins en quatre epics et quatre sprints priorisés.
+- Construction du budget, analyse des risques et préparation des arbitrages du comité projet.
+- Mise en pratique du rôle de Scrum Master, coordination Dev/Ops, pairing, mentorat et formations.
+
+### [GlossaPro](https://gitlab.com/StateOfFlowHunter/glossapro-pipeline)
+
+Analyse d’un SI existant, définition d’une trajectoire de transformation et validation d’un pilote CI/CD.
+
+- Cartographie de la livraison, diagnostic des silos et priorisation des améliorations.
+- Organisation Dev/Ops, ateliers, responsabilités, KPI et critères d’adoption.
+- Pilote GitLab CI validé avec sept tests et neuf jobs, incluant SAST, Gitleaks et Trivy.
+
+Compétences : **CI/CD · DevSecOps · Scrum · Pilotage · Management d’équipe · Culture DevOps · Architecture · Observabilité**
 
 ## Projets personnels et open source
 

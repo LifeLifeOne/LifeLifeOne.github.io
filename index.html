@@ -86,7 +86,10 @@
             "Observabilité",
             "Accessibilité",
             "Gestion de projet",
-            "Scrum"
+            "Scrum",
+            "Culture DevOps",
+            "Conduite du changement",
+            "Gestion des risques"
           ],
           "hasOccupation": {
             "@type": "Occupation",
@@ -151,6 +154,19 @@
               "description": "Industrialisation DevOps d’une application Angular / Spring Boot, de la construction à l’observabilité.",
               "url": "https://gitlab.com/openclassrooms5651214/openclassrooms-p6",
               "codeRepository": "https://gitlab.com/openclassrooms5651214/openclassrooms-p6"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "CATASTERRE - Transformation DevOps",
+              "description": "Pilotage agile d’une transformation DevOps : backlog, priorisation, budget, risques et accompagnement d’équipe.",
+              "url": "https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b"
+            },
+            {
+              "@type": "SoftwareSourceCode",
+              "name": "GlossaPro - Pilote de transformation DevOps",
+              "description": "Analyse d’un système d’information, stratégie de transformation DevOps et pilote CI/CD vérifié.",
+              "url": "https://gitlab.com/StateOfFlowHunter/glossapro-pipeline",
+              "codeRepository": "https://gitlab.com/StateOfFlowHunter/glossapro-pipeline"
             }
           ]
         },
@@ -289,7 +305,7 @@
       <ol>
         <li><a href="#accueil" data-pipeline-label="Accueil"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Accueil</span></a></li>
         <li><a href="#parcours" data-pipeline-label="Parcours"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Parcours</span></a></li>
-        <li><a href="#projet" data-pipeline-label="Projet DevOps"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Projet DevOps</span></a></li>
+        <li><a href="#projet" data-pipeline-label="Projets DevOps"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Projets DevOps</span></a></li>
         <li><a href="#projets" data-pipeline-label="Projets personnels"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Projets personnels</span></a></li>
         <li><a href="#competences" data-pipeline-label="Compétences"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Compétences</span></a></li>
         <li><a href="#certifications" data-pipeline-label="Certifications"><span class="pipeline-job-icon" aria-hidden="true"></span><span class="pipeline-tooltip">Certifications</span></a></li>
@@ -514,64 +530,80 @@
       <section class="case-study" id="projet">
         <div class="case-study-inner section">
           <div class="case-intro reveal">
-            <p class="eyebrow eyebrow-light"><span></span>Projet de formation · OpenClassrooms</p>
-            <h2>MicroCRM,<br />de la branche à la production.</h2>
+            <p class="eyebrow eyebrow-light"><span></span>Projets de formation · OpenClassrooms</p>
+            <h2>Automatiser.<br />Piloter. Transformer.</h2>
             <p>
-              Parmi les différents projets réalisés durant ma formation Ingénieur DevOps,
-              MicroCRM est le plus complet : il couvre l’industrialisation d’une application
-              de démonstration Angular / Spring Boot, de la construction à l’observabilité.
+              Trois mises en situation complémentaires réalisées durant ma formation
+              Ingénieur DevOps : industrialiser une livraison, piloter une équipe agile et
+              construire une stratégie de transformation adaptée à un SI existant.
             </p>
-            <a
-              class="text-link text-link-light"
-              href="https://gitlab.com/openclassrooms5651214/openclassrooms-p6"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Voir le dépôt GitLab <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-
-          <div
-            class="workflow reveal"
-            aria-label="Pipeline : Build, Test, Security, Package, Scan, Release et Deploy, puis monitoring en continu"
-          >
-            <span>Build</span><b>→</b><span>Test</span><b>→</b><span>Security</span><b>→</b>
-            <span>Package</span><b>→</b><span>Scan</span><b>→</b><span>Release</span><b>→</b><span>Deploy</span>
-            <b class="workflow-continuation">⇢</b><span class="workflow-monitoring">Monitoring <small>en continu</small></span>
           </div>
 
           <div class="case-grid">
             <article class="case-card reveal">
-              <span class="card-index">01</span>
-              <h3>Livraison continue</h3>
-              <p>
-                Pipeline GitLab CI modulaire, staging automatique, production manuelle,
-                versioning sémantique et rollback Helm.
-              </p>
+              <div class="case-card-topline">
+                <span class="card-index">01</span>
+                <span class="case-card-role">Industrialisation DevSecOps</span>
+              </div>
+              <h3>MicroCRM</h3>
+              <p>Industrialisation d’une application Angular / Spring Boot, de la construction à l’observabilité.</p>
+              <ul class="case-evidence">
+                <li>Pipeline GitLab CI modulaire, staging automatique, versionnement et rollback Helm.</li>
+                <li>SAST, DAST, Gitleaks, SonarCloud et gate Trivy bloquant.</li>
+                <li>Infrastructure as Code avec Ansible, Terraform et Helm, observabilité ELK et métriques DORA.</li>
+              </ul>
+              <div class="case-tags" aria-label="Compétences mobilisées sur MicroCRM">
+                <span>CI/CD</span><span>DevSecOps</span><span>IaC</span><span>Observabilité</span>
+              </div>
+              <a class="case-project-link" href="https://gitlab.com/openclassrooms5651214/openclassrooms-p6" target="_blank" rel="noreferrer">
+                Voir le dépôt GitLab <span aria-hidden="true">↗</span>
+              </a>
             </article>
 
             <article class="case-card reveal" data-delay="1">
-              <span class="card-index">02</span>
-              <h3>Sécurité intégrée</h3>
-              <p>
-                SAST, DAST, Gitleaks en pre-commit et en CI, SonarCloud et gate Trivy bloquant les images
-                vulnérables avant leur publication.
-              </p>
+              <div class="case-card-topline">
+                <span class="card-index">02</span>
+                <span class="case-card-role">Pilotage agile</span>
+              </div>
+              <h3>CATASTERRE</h3>
+              <p>Pilotage d’une transformation de 12 semaines pour rapprocher développement, opérations et qualité.</p>
+              <ul class="case-evidence">
+                <li>Backlog de 19 besoins structuré en quatre epics et quatre sprints priorisés.</li>
+                <li>Budget de 108 000 € HT, matrice des risques et arbitrages présentés en comité projet.</li>
+                <li>Daily mixte, pairing, mentorat, formations et mise en pratique du rôle de Scrum Master.</li>
+              </ul>
+              <div class="case-tags" aria-label="Compétences mobilisées sur CATASTERRE">
+                <span>Scrum</span><span>Budget</span><span>Risques</span><span>Management</span>
+              </div>
+              <a class="case-project-link" href="https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b" target="_blank" rel="noreferrer">
+                Voir le backlog public <span aria-hidden="true">↗</span>
+              </a>
             </article>
 
             <article class="case-card reveal" data-delay="2">
-              <span class="card-index">03</span>
-              <h3>Infrastructure as Code & observabilité</h3>
-              <p>
-                Toute la chaîne décrite en code (Ansible, Terraform, Helm), reconstructible
-                à l’identique. Observabilité ELK et métriques DORA.
-              </p>
+              <div class="case-card-topline">
+                <span class="card-index">03</span>
+                <span class="case-card-role">Stratégie de transformation</span>
+              </div>
+              <h3>GlossaPro</h3>
+              <p>Analyse d’un SI existant et définition d’une trajectoire progressive associant technique et adoption.</p>
+              <ul class="case-evidence">
+                <li>Cartographie d’une livraison en 11 étapes, dont huit manuelles, puis priorisation des améliorations.</li>
+                <li>Organisation Dev/Ops, ateliers, responsabilités, KPI et critères d’adoption documentés.</li>
+                <li>Pilote GitLab CI validé avec sept tests, neuf jobs, SAST, Gitleaks, Trivy et traçabilité par digest.</li>
+              </ul>
+              <div class="case-tags" aria-label="Compétences mobilisées sur GlossaPro">
+                <span>Audit</span><span>Stratégie</span><span>Culture DevOps</span><span>Pilote CI/CD</span>
+              </div>
+              <a class="case-project-link" href="https://gitlab.com/StateOfFlowHunter/glossapro-pipeline" target="_blank" rel="noreferrer">
+                Voir le pilote GitLab <span aria-hidden="true">↗</span>
+              </a>
             </article>
           </div>
 
-          <div class="tech-list reveal" aria-label="Technologies utilisées sur MicroCRM">
-            <span>GitLab CI</span><span>Docker</span><span>Kubernetes</span><span>Helm</span>
-            <span>Terraform</span><span>Ansible</span><span>Trivy</span><span>Gitleaks</span><span>pre-commit</span><span>ELK</span>
+          <div class="tech-list reveal" aria-label="Compétences couvertes par les projets DevOps">
+            <span>CI/CD</span><span>DevSecOps</span><span>Scrum</span><span>Pilotage</span>
+            <span>Management d’équipe</span><span>Culture DevOps</span><span>Architecture</span><span>Observabilité</span>
           </div>
         </div>
       </section>

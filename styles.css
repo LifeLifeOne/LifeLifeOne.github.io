@@ -811,24 +811,22 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 .case-study { overflow: hidden; color: var(--on-dark); background: var(--case); }
 .case-study-inner { padding-block: 8rem; }
 .case-intro { display: grid; grid-template-columns: 1.2fr 0.8fr; column-gap: 8vw; }
-.case-intro .eyebrow, .case-intro h2 { grid-column: 1; }
+.case-intro .eyebrow { grid-column: 1; grid-row: 1; }
+.case-intro h2 { grid-column: 1; grid-row: 2; }
 .case-intro > p { grid-column: 2; grid-row: 2; align-self: end; margin: 0; color: var(--on-dark-muted); font-size: 1.05rem; }
-.case-intro .text-link { grid-column: 2; align-self: start; margin-top: 1.5rem; }
-.text-link { display: inline-flex; width: fit-content; gap: 0.4rem; padding-bottom: 0.25rem; border-bottom: 1px solid currentColor; font-size: 0.82rem; font-weight: 700; text-decoration: none; }
-.text-link-light { color: var(--lime); }
-
-.workflow { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.65rem; margin: 5rem 0 3rem; font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.05em; text-transform: uppercase; }
-.workflow span { padding: 0.45rem 0.7rem; border: 1px solid rgba(216,239,141,0.3); border-radius: 999px; }
-.workflow b { color: var(--lime); font-weight: 400; }
-.workflow .workflow-continuation { opacity: 0.7; }
-.workflow .workflow-monitoring { display: inline-flex; align-items: center; gap: 0.45rem; border-style: dashed; background: rgba(216,239,141,0.08); color: var(--lime); }
-.workflow-monitoring small { color: #9eb3aa; font-family: var(--mono); font-size: 0.48rem; letter-spacing: 0; text-transform: uppercase; }
-
-.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.case-card { padding: 1.6rem; border: 1px solid rgba(255,255,255,0.15); border-radius: 0.8rem; background: rgba(255,255,255,0.035); }
+.case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 4.5rem; }
+.case-card { display: flex; min-height: 560px; flex-direction: column; padding: 1.6rem; border: 1px solid rgba(255,255,255,0.15); border-radius: 0.8rem; background: rgba(255,255,255,0.035); }
+.case-card-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .card-index { color: var(--lime); font-family: var(--mono); font-size: 0.67rem; }
-.case-card h3 { margin: 1.8rem 0 0.6rem; font-size: 1.35rem; }
+.case-card-role { color: var(--lime); font-family: var(--mono); font-size: 0.55rem; letter-spacing: 0.05em; text-align: right; text-transform: uppercase; }
+.case-card h3 { margin: 1.8rem 0 0.6rem; font-size: 1.6rem; }
 .case-card p { margin: 0; color: var(--on-dark-muted); font-size: 0.85rem; }
+.case-evidence { display: grid; gap: 0.8rem; margin: 1.5rem 0; padding: 1.25rem 0 0 1rem; border-top: 1px solid rgba(255,255,255,0.12); color: var(--on-dark-muted); font-size: 0.78rem; }
+.case-evidence li::marker { color: var(--lime); }
+.case-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; padding-top: 1rem; }
+.case-tags span { padding: 0.25rem 0.5rem; border: 1px solid rgba(216,239,141,0.25); border-radius: 999px; color: var(--lime); font-family: var(--mono); font-size: 0.52rem; text-transform: uppercase; }
+.case-project-link { display: inline-flex; width: fit-content; gap: 0.35rem; margin-top: 1.25rem; padding-bottom: 0.2rem; border-bottom: 1px solid currentColor; color: var(--lime); font-size: 0.72rem; font-weight: 700; text-decoration: none; }
+.case-project-link:hover { border-bottom-color: transparent; }
 .tech-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; margin-top: 2.5rem; }
 .tech-list span { color: #9eb3aa; font-family: var(--mono); font-size: 0.64rem; }
 .tech-list span:not(:last-child)::after { margin-left: 0.7rem; color: var(--lime); content: "/"; }
@@ -953,30 +951,24 @@ html[data-theme="dark"] .case-study {
 }
 html[data-theme="dark"] .case-intro > p,
 html[data-theme="dark"] .case-card p,
-html[data-theme="dark"] .tech-list span,
-html[data-theme="dark"] .workflow-monitoring small {
+html[data-theme="dark"] .case-evidence,
+html[data-theme="dark"] .tech-list span {
   color: var(--case-muted);
 }
 html[data-theme="dark"] .case-intro .eyebrow,
-html[data-theme="dark"] .text-link-light,
-html[data-theme="dark"] .workflow b,
-html[data-theme="dark"] .workflow-monitoring,
 html[data-theme="dark"] .card-index,
+html[data-theme="dark"] .case-card-role,
+html[data-theme="dark"] .case-project-link,
+html[data-theme="dark"] .case-evidence li::marker,
 html[data-theme="dark"] .tech-list span:not(:last-child)::after {
   color: var(--case-accent);
-}
-html[data-theme="dark"] .workflow span {
-  border-color: var(--case-line);
-  color: var(--case-ink);
-}
-html[data-theme="dark"] .workflow-monitoring {
-  background: rgba(74, 111, 72, 0.08);
-  border-color: rgba(74, 111, 72, 0.28);
 }
 html[data-theme="dark"] .case-card {
   border-color: var(--case-line);
   background: rgba(255, 255, 255, 0.32);
 }
+html[data-theme="dark"] .case-evidence { border-top-color: var(--case-line); }
+html[data-theme="dark"] .case-tags span { border-color: var(--case-line); color: var(--case-accent); }
 html[data-theme="dark"] .case-study :focus-visible {
   outline-color: var(--case-accent);
 }
@@ -1016,9 +1008,10 @@ html[data-theme="dark"] .site-footer a {
   .status-card { left: -10%; }
   .journey, .skills-inner { grid-template-columns: 1fr; }
   .case-intro { grid-template-columns: 1fr; }
-  .case-intro .eyebrow, .case-intro h2, .case-intro > p, .case-intro .text-link { grid-column: 1; grid-row: auto; }
+  .case-intro .eyebrow, .case-intro h2, .case-intro > p { grid-column: 1; grid-row: auto; }
   .case-intro > p { margin-top: 1.5rem; }
   .case-grid { grid-template-columns: 1fr; }
+  .case-card { min-height: 0; }
   .certifications-heading { grid-template-columns: 1fr; }
   .certifications-heading > p { margin-top: 1.5rem; }
   .certification-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1126,8 +1119,6 @@ html[data-theme="dark"] .site-footer a {
   .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
   .fun-fact-layout { grid-template-columns: 1fr; }
   .case-study-inner, .skills-inner, .contact-inner { padding-block: 6rem; }
-  .workflow { justify-content: flex-start; }
-  .workflow b { display: none; }
   .project-list { margin-top: 3rem; }
   .project-row { grid-template-columns: 1fr; gap: 0.8rem; }
   .project-links { grid-column: 1; margin-top: 0.8rem; }
