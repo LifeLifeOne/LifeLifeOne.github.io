@@ -5,7 +5,7 @@
 <h1 align="center">Vivien BARBEAU</h1>
 
 <p align="center">
-  <strong>Développeur Drupal / PHP · Spécialisation DevOps</strong><br>
+  <strong>Développeur Drupal / PHP · DevOps</strong><br>
   Nantes · Hybride · Full remote · Mobilité France
 </p>
 
@@ -40,10 +40,11 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 
 ### Ingénieur DevOps · OpenClassrooms · 2026
 
-Formation RNCP 7 (équiv. Bac+5) en cours : automatisation, déploiement continu,
+Formation RNCP 7 (équiv. Bac+5) terminée : automatisation, déploiement continu,
 conteneurisation, orchestration, Infrastructure as Code et cloud AWS. Le cursus comprend
 également des projets consacrés au pilotage, au management d’équipe et à la mise en
-pratique du rôle de Scrum Master.
+pratique du rôle de Scrum Master. L’attestation de fin de formation est disponible, le
+titre RNCP reste soumis à la décision du jury.
 
 [Consulter le programme de la formation](https://static.oc-static.com/syllabus/2461-expert-devops-fr-fr-standard.pdf)
 
@@ -99,7 +100,7 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 - **[Formation JavaScript avancé](https://www.humancoders.com/diplomas/204d689e1d24)** · Human Coders · 2024.
 - **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP 5 · équiv. Bac+2 · 3W Academy · 2021.
 - **[Écoconception numérique](./assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg)** · EduGroupe · 2025–2026.
-- **Ingénieur DevOps** · titre RNCP 7 · équiv. Bac+5 · en préparation · OpenClassrooms · 2026.
+- **[Formation Ingénieur DevOps terminée](./assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf)** · attestation obtenue · titre RNCP 7 (équiv. Bac+5) en attente du jury · OpenClassrooms · 2026.
 
 ## Recommandations
 
