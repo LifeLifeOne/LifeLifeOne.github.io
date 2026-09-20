@@ -65,8 +65,8 @@ Formation intensive full-stack et obtention du titre RNCP 5 (équiv. Bac+2) de d
 
 ## Projets de formation DevOps
 
-Ces trois projets réalisés durant la formation Ingénieur DevOps couvrent des dimensions
-complémentaires : automatisation, pilotage agile et transformation d’un système d’information.
+Ces deux projets réalisés durant la formation Ingénieur DevOps couvrent des dimensions
+complémentaires : industrialisation DevSecOps et pilotage agile d’une transformation.
 
 ### [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6)
 
@@ -83,14 +83,6 @@ Pilotage d’une transformation DevOps de 12 semaines pour rapprocher développe
 - Structuration de 19 besoins en quatre epics et quatre sprints priorisés.
 - Construction du budget, analyse des risques et préparation des arbitrages du comité projet.
 - Mise en pratique du rôle de Scrum Master, coordination Dev/Ops, pairing, mentorat et formations.
-
-### [GlossaPro](https://gitlab.com/StateOfFlowHunter/glossapro-pipeline)
-
-Analyse d’un SI existant, définition d’une trajectoire de transformation et validation d’un pilote CI/CD.
-
-- Cartographie de la livraison, diagnostic des silos et priorisation des améliorations.
-- Organisation Dev/Ops, ateliers, responsabilités, KPI et critères d’adoption.
-- Pilote GitLab CI validé avec sept tests et neuf jobs, incluant SAST, Gitleaks et Trivy.
 
 Compétences : **CI/CD · DevSecOps · Scrum · Pilotage · Management d’équipe · Culture DevOps · Architecture · Observabilité**
 

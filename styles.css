@@ -814,7 +814,7 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 .case-intro .eyebrow { grid-column: 1; grid-row: 1; }
 .case-intro h2 { grid-column: 1; grid-row: 2; }
 .case-intro > p { grid-column: 2; grid-row: 2; align-self: end; margin: 0; color: var(--on-dark-muted); font-size: 1.05rem; }
-.case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 4.5rem; }
+.case-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 4.5rem; }
 .case-card { display: flex; min-height: 560px; flex-direction: column; padding: 1.6rem; border: 1px solid rgba(255,255,255,0.15); border-radius: 0.8rem; background: rgba(255,255,255,0.035); }
 .case-card-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .card-index { color: var(--lime); font-family: var(--mono); font-size: 0.67rem; }
