@@ -12,8 +12,8 @@
 <p align="center">
   <a href="https://vivienbarbeau.fr/">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/vivien-barbeau/">LinkedIn</a> ·
-  <a href="./assets/CV_Vivien_BARBEAU_Drupal_PHP.pdf">CV Drupal / PHP</a> ·
-  <a href="./assets/CV_Vivien_BARBEAU_DevOps.pdf">CV DevOps junior</a> ·
+  <a href="./assets/CV_Vivien_BARBEAU_Developpeur_Drupal_PHP_ATS.pdf">CV Drupal / PHP</a> ·
+  <a href="./assets/CV_Vivien_BARBEAU_DevOps_Junior_ATS.pdf">CV DevOps junior</a> ·
   <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Prise%20de%20contact">E-mail</a>
 </p>
 
@@ -38,13 +38,13 @@ permet d’aborder un produit de bout en bout, de son développement à son expl
 
 ## Parcours
 
-### Ingénieur DevOps · OpenClassrooms · 2026
+### Expert en développement logiciel - RNCP 41330, niveau 7 (Bac+5) · OpenClassrooms · 2026
 
-Formation RNCP 7 (équiv. Bac+5) terminée : automatisation, déploiement continu,
-conteneurisation, orchestration, Infrastructure as Code et cloud AWS. Le cursus comprend
-également des projets consacrés au pilotage, au management d’équipe et à la mise en
-pratique du rôle de Scrum Master. L’attestation de fin de formation est disponible, le
-titre RNCP reste soumis à la décision du jury.
+Formation préparant au titre RNCP 41330, niveau 7 (Bac+5), terminée : automatisation,
+déploiement continu, conteneurisation, orchestration, Infrastructure as Code et cloud AWS.
+Le cursus comprend également des projets consacrés au pilotage, au management d’équipe
+et à la mise en pratique du rôle de Scrum Master. L’attestation de fin de formation est
+disponible, le titre RNCP reste soumis à la décision du jury.
 
 [Consulter le programme de la formation](https://static.oc-static.com/syllabus/2461-expert-devops-fr-fr-standard.pdf)
 
@@ -66,8 +66,8 @@ Formation intensive full-stack et obtention du titre RNCP 5 (équiv. Bac+2) de d
 
 ## Projets de formation DevOps
 
-Ces deux projets réalisés durant la formation Ingénieur DevOps couvrent des dimensions
-complémentaires : industrialisation DevSecOps et pilotage agile d’une transformation.
+Ces deux projets réalisés durant la formation Expert en développement logiciel couvrent
+des dimensions complémentaires : industrialisation DevSecOps et pilotage agile d’une transformation.
 
 ### [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6)
 
@@ -100,7 +100,7 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 - **[Formation JavaScript avancé](https://www.humancoders.com/diplomas/204d689e1d24)** · Human Coders · 2024.
 - **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP 5 · équiv. Bac+2 · 3W Academy · 2021.
 - **[Écoconception numérique](./assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg)** · EduGroupe · 2025–2026.
-- **[Formation Ingénieur DevOps terminée](./assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf)** · attestation obtenue · titre RNCP 7 (équiv. Bac+5) en attente du jury · OpenClassrooms · 2026.
+- **[Formation Expert en développement logiciel terminée](./assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf)** · attestation obtenue · titre RNCP 41330, niveau 7 (Bac+5), en attente du jury · OpenClassrooms · 2026.
 
 ## Recommandations
 
@@ -108,6 +108,7 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 - [Pierre Waldura · Lead Developer Drupal](./assets/LR%20-%20PW.pdf)
 - [Tommy Tholas · Team Leader Drupal / AI Engineer](./assets/LR%20-%20TT.pdf)
 - [Carole Fouere · Transformation numérique et accessibilité](./assets/LR%20-%20CF.png)
+- [Laurent Grangeau · Solutions Architect chez Google](./assets/LR%20-%20LG.png)
 
 Les coordonnées personnelles sont masquées sur les versions publiques afin de limiter
 les risques de divulgation et de spam. Les lettres originales peuvent être communiquées
