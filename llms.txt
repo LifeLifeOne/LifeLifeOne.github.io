@@ -1,0 +1,41 @@
+# Vivien BARBEAU — Portfolio professionnel
+
+> Développeur web Drupal/PHP spécialisé en DevOps, basé à Nantes, disponible en hybride ou full remote et mobile partout en France.
+
+Vivien BARBEAU développe des applications Drupal/PHP et industrialise leur livraison avec des pratiques CI/CD, DevSecOps, Infrastructure as Code, conteneurisation et observabilité. Sa formation OpenClassrooms « Expert en développement logiciel - RNCP 41330, niveau 7 (Bac+5) » est terminée ; l’attestation de fin de formation est disponible et le titre reste en attente de la décision du jury.
+
+## Profil
+
+- [Portfolio](https://vivienbarbeau.fr/): parcours, compétences, projets, certifications et recommandations professionnelles.
+- [Présentation en Markdown](https://vivienbarbeau.fr/README.md): version textuelle synthétique du portfolio.
+- [Recommandations](https://vivienbarbeau.fr/#recommandations): témoignages d’anciens responsables et collaborateurs.
+
+## Expertise
+
+- Développement : Drupal, PHP, JavaScript, API, qualité web et accessibilité.
+- Livraison et sécurité : GitLab CI/CD, Docker, SonarCloud, Trivy, Gitleaks, SAST et DAST.
+- Infrastructure : Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.
+- Pilotage : Scrum, gestion de projet, management d’équipe et culture DevOps.
+
+## CV
+
+- [CV Développeur Drupal / PHP](https://vivienbarbeau.fr/assets/CV_Vivien_BARBEAU_Developpeur_Drupal_PHP_ATS.pdf): version PDF compatible ATS.
+- [CV DevOps junior](https://vivienbarbeau.fr/assets/CV_Vivien_BARBEAU_DevOps_Junior_ATS.pdf): version PDF compatible ATS.
+
+## Projets
+
+- [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete): module Drupal contribué utilisé par plus de 60 sites.
+- [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6): industrialisation DevSecOps d’une application Angular et Spring Boot.
+- [CATASTERRE](https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b): pilotage agile d’une transformation DevOps.
+
+## Certifications et formation
+
+- [Attestation OpenClassrooms](https://vivienbarbeau.fr/assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf): formation terminée, titre RNCP 41330 en attente du jury.
+- [Certification Opquast](https://directory.opquast.com/fr/certificat/OQWI5U/): maîtrise de la qualité en projet web, score de 875 sur 1000.
+- [Titre Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien): titre RNCP 5 obtenu auprès de la 3W Academy.
+
+## Profils professionnels
+
+- [LinkedIn](https://www.linkedin.com/in/vivien-barbeau/)
+- [GitHub](https://github.com/LifeLifeOne)
+- [Drupal.org](https://www.drupal.org/u/lifelifeone)

@@ -92,7 +92,7 @@ Compétences : **CI/CD · DevSecOps · Scrum · Pilotage · Management d’équi
 ### [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete)
 
 Module contribué améliorant l’expérience des champs d’autocomplétion natifs de Drupal.
-**Près de 50 sites déclarent aujourd’hui l’utiliser selon les statistiques de la plateforme.**
+**Plus de 60 sites déclarent aujourd’hui l’utiliser selon les statistiques de la plateforme.**
 
 ## Certifications et formations
 
@@ -104,11 +104,11 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 
 ## Recommandations
 
+- [Laurent Grangeau · Solutions Architect chez Google](./assets/LR%20-%20LG.png)
 - [Adam Carton de Wiart · Directeur du pôle CMS & Front](./assets/LR%20-%20ACDW.pdf)
 - [Pierre Waldura · Lead Developer Drupal](./assets/LR%20-%20PW.pdf)
 - [Tommy Tholas · Team Leader Drupal / AI Engineer](./assets/LR%20-%20TT.pdf)
 - [Carole Fouere · Transformation numérique et accessibilité](./assets/LR%20-%20CF.png)
-- [Laurent Grangeau · Solutions Architect chez Google](./assets/LR%20-%20LG.png)
 
 Les coordonnées personnelles sont masquées sur les versions publiques afin de limiter
 les risques de divulgation et de spam. Les lettres originales peuvent être communiquées
