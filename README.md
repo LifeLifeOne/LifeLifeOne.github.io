@@ -96,11 +96,11 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 
 ## Certifications et formations
 
+- **[Formation Expert en développement logiciel terminée](./assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf)** · attestation obtenue · titre RNCP 41330, niveau 7 (Bac+5), en attente du jury · OpenClassrooms · 2026.
 - **[Maîtrise de la qualité en projet web](https://directory.opquast.com/fr/certificat/OQWI5U/)** · Opquast · 875 / 1000 · valide jusqu’en septembre 2027.
 - **[Formation JavaScript avancé](https://www.humancoders.com/diplomas/204d689e1d24)** · Human Coders · 2024.
 - **[Développeur intégrateur web](https://diplome.3wa.fr/barbeau-vivien)** · titre RNCP 5 · équiv. Bac+2 · 3W Academy · 2021.
 - **[Écoconception numérique](./assets/EDUGROUPE_Vivien_BARBEAU_Formation.jpg)** · EduGroupe · 2025–2026.
-- **[Formation Expert en développement logiciel terminée](./assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf)** · attestation obtenue · titre RNCP 41330, niveau 7 (Bac+5), en attente du jury · OpenClassrooms · 2026.
 
 ## Recommandations
 

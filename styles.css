@@ -856,10 +856,8 @@ h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
 .certifications-heading > p { max-width: 520px; margin: 0 0 0.4rem; color: var(--muted); }
 .certification-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem; margin-top: 4.5rem; }
 .certification-card { display: flex; min-height: 320px; flex-direction: column; padding: 1.5rem; border: 1px solid var(--line); border-radius: 0.75rem; background: var(--surface); color: inherit; text-decoration: none; }
-a.certification-card,
-a.certification-progress { position: relative; color: inherit; text-decoration: none; transition: border-color 180ms ease; }
-a.certification-card:hover,
-a.certification-progress:hover { border-color: var(--green); }
+a.certification-card { position: relative; color: inherit; text-decoration: none; transition: border-color 180ms ease; }
+a.certification-card:hover { border-color: var(--green); }
 .certification-tooltip {
   position: absolute;
   z-index: 2;
@@ -880,9 +878,7 @@ a.certification-progress:hover { border-color: var(--green); }
   transition: opacity 180ms ease, transform 180ms ease;
 }
 a.certification-card:hover .certification-tooltip,
-a.certification-card:focus-visible .certification-tooltip,
-a.certification-progress:hover .certification-tooltip,
-a.certification-progress:focus-visible .certification-tooltip {
+a.certification-card:focus-visible .certification-tooltip {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
@@ -895,15 +891,6 @@ a.certification-progress:focus-visible .certification-tooltip {
 .certification-card h3 { margin: 0; font-size: 1.3rem; line-height: 1.25; }
 .certification-detail { margin: 1rem 0 1.5rem; color: var(--muted); font-size: 0.8rem; }
 .certification-date { margin: auto 0 0; padding-top: 1rem; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 0.6rem; }
-.certification-progress { display: grid; grid-template-columns: 1fr 1.5fr auto; align-items: center; gap: 2rem; margin-top: 0.85rem; padding: 1.4rem 1.5rem; border-radius: 0.75rem; background: var(--green-light); }
-.certification-progress > div { display: flex; align-items: center; gap: 0.7rem; }
-.certification-progress p { margin: 0; color: var(--green); font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; }
-.certification-progress h3 { margin: 0; font-size: 1.05rem; }
-.certification-progress > span:not(.certification-tooltip) { color: var(--muted); font-family: var(--mono); font-size: 0.62rem; }
-.certification-progress > .certification-tooltip { color: var(--paper); }
-.progress-pulse { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #39a66e; box-shadow: 0 0 0 5px rgba(57, 166, 110, 0.14); }
-.certification-completed { border: 1px solid var(--line); background: var(--surface); }
-.completion-mark { display: grid; width: 1.2rem; height: 1.2rem; place-items: center; border-radius: 50%; background: var(--green); color: var(--on-green); font-size: 0.65rem; }
 
 .recommendations { display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: center; gap: 10vw; padding-block: 9rem; }
 .recommendation-copy > p:not(.eyebrow) { max-width: 570px; margin: 1.8rem 0; color: var(--muted); }
@@ -1015,8 +1002,6 @@ html[data-theme="dark"] .site-footer a {
   .certifications-heading { grid-template-columns: 1fr; }
   .certifications-heading > p { margin-top: 1.5rem; }
   .certification-grid { grid-template-columns: repeat(2, 1fr); }
-  .certification-progress { grid-template-columns: 1fr 1fr; }
-  .certification-progress > span { grid-column: 2; }
   .project-row { grid-template-columns: 50px 1fr; }
   .project-links { grid-column: 2; flex-direction: row; align-items: flex-start; justify-content: flex-start; }
   .recommendations { grid-template-columns: 1fr; gap: 4rem; }
@@ -1128,8 +1113,6 @@ html[data-theme="dark"] .site-footer a {
   .skill-card-wide h3 { margin: 3.5rem 0 0.7rem; }
   .certification-grid { grid-template-columns: 1fr; margin-top: 3rem; }
   .certification-card { min-height: 285px; }
-  .certification-progress { grid-template-columns: 1fr; gap: 0.6rem; }
-  .certification-progress > span { grid-column: 1; }
   .letter-card { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }
