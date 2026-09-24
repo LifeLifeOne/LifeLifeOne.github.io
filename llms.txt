@@ -33,9 +33,10 @@ détaillées publiquement dans ce portfolio ; elles ne représentent pas l’int
 - [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6): industrialisation DevSecOps d’une application Angular et Spring Boot.
 - [CATASTERRE](https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b): pilotage agile d’une transformation DevOps.
 
-### Projet open source
+### Projets personnels et open source
 
 - [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete): module Drupal contribué utilisé par plus de 60 sites.
+- [CarburantsPrix.fr](https://carburantsprix.fr/): terrain d’apprentissage de bout en bout autour du SEO avec Astro, de l’hébergement OVH, des données publiques et du développement Android natif avec Kotlin et Jetpack Compose ; application publiée et maintenue sur [Google Play](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix).
 
 ## Certifications et formation
 

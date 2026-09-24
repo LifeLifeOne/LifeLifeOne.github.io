@@ -99,6 +99,15 @@ Compétences du parcours : **CI/CD · DevSecOps · Conteneurisation · Orchestra
 Module contribué améliorant l’expérience des champs d’autocomplétion natifs de Drupal.
 **Plus de 60 sites déclarent aujourd’hui l’utiliser selon les statistiques de la plateforme.**
 
+### [CarburantsPrix.fr](https://carburantsprix.fr/)
+
+Au-delà du service de comparaison, ce projet personnel m’a surtout servi de **terrain
+d’apprentissage de bout en bout** : SEO technique et programmatique avec Astro, hébergement
+et déploiement sur OVH, exploitation de données publiques, développement Android natif avec
+Kotlin et Jetpack Compose dans Android Studio, puis publication et maintenance sur Google Play.
+
+[Consulter l’application Android](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix)
+
 ## Certifications et formations
 
 - **[Formation Expert en développement logiciel terminée](./assets/OPENCLASSROOMS_Vivien_BARBEAU_Attestation_Fin_Formation.pdf)** · attestation obtenue · titre RNCP 41330, niveau 7 (Bac+5), en attente du jury · OpenClassrooms · 2026.
