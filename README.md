@@ -66,8 +66,13 @@ Formation intensive full-stack et obtention du titre RNCP 5 (équiv. Bac+2) de d
 
 ## Projets de formation DevOps
 
-Ces deux projets réalisés durant la formation Expert en développement logiciel couvrent
-des dimensions complémentaires : industrialisation DevSecOps et pilotage agile d’une transformation.
+MicroCRM et CATASTERRE sont deux études de cas sélectionnées parmi les **neuf projets
+professionnalisants** du parcours Expert en développement logiciel. L’ensemble de la formation
+couvre l’automatisation des livraisons, la CI/CD et le DevSecOps, la conteneurisation et
+l’orchestration, l’Infrastructure as Code, AWS, la sécurité des pipelines et l’observabilité.
+Elle aborde également les cartographies AS-IS et TO-BE, la conception de schémas IaC,
+la gestion des risques, la construction de backlogs, le pilotage agile et la pratique du
+rôle de Scrum Master.
 
 ### [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6)
 
@@ -85,7 +90,7 @@ Pilotage d’une transformation DevOps de 12 semaines pour rapprocher développe
 - Construction du budget, analyse des risques et préparation des arbitrages du comité projet.
 - Mise en pratique du rôle de Scrum Master, coordination Dev/Ops, pairing, mentorat et formations.
 
-Compétences : **CI/CD · DevSecOps · Scrum · Pilotage · Management d’équipe · Culture DevOps · Architecture · Observabilité**
+Compétences du parcours : **CI/CD · DevSecOps · Conteneurisation · Orchestration · IaC · AWS · Observabilité · Cartographies AS-IS / TO-BE · Gestion des risques · Backlogs · Scrum · Management**
 
 ## Projets personnels et open source
 

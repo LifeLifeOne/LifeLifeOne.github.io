@@ -24,9 +24,18 @@ Vivien BARBEAU développe des applications Drupal/PHP et industrialise leur livr
 
 ## Projets
 
-- [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete): module Drupal contribué utilisé par plus de 60 sites.
+### Études de cas OpenClassrooms
+
+La formation OpenClassrooms repose sur neuf projets professionnalisants couvrant les dimensions
+techniques et organisationnelles du DevOps. MicroCRM et CATASTERRE sont les deux études de cas
+détaillées publiquement dans ce portfolio ; elles ne représentent pas l’intégralité du parcours.
+
 - [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6): industrialisation DevSecOps d’une application Angular et Spring Boot.
 - [CATASTERRE](https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b): pilotage agile d’une transformation DevOps.
+
+### Projet open source
+
+- [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete): module Drupal contribué utilisé par plus de 60 sites.
 
 ## Certifications et formation
 
