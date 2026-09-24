@@ -544,7 +544,7 @@ h1, h2 {
   line-height: 1.02;
 }
 
-h1 { max-width: 900px; font-size: clamp(3rem, 6.3vw, 6rem); }
+h1 { max-width: 900px; font-size: clamp(2.8rem, 5.8vw, 5.5rem); }
 h1 > span { display: block; }
 h1 em { color: var(--green); font-style: normal; }
 h2 { font-size: clamp(2.5rem, 4.8vw, 4.5rem); }
@@ -1105,7 +1105,7 @@ html[data-theme="dark"] .site-footer a {
 @media (max-width: 600px) {
   .section { width: min(calc(100% - 2.5rem), var(--max-width)); }
   .hero { padding-top: 3rem; }
-  h1 { text-wrap: wrap; font-size: clamp(2.35rem, 10vw, 3rem); }
+  h1 { text-wrap: wrap; font-size: clamp(2.2rem, 9.4vw, 2.8rem); }
   h2 { font-size: clamp(2.2rem, 11vw, 3.3rem); }
   .hero-actions, .button { width: 100%; }
   .hero-visual { display: grid; width: 86%; gap: 0.9rem; }
