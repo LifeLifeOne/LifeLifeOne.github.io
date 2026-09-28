@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="210mm" height="297mm" viewBox="0 0 794 1123" role="img" aria-labelledby="title desc">
+  <title id="title">Vous recrutez dans la tech ?</title>
+  <desc id="desc">Affiche de recherche d’emploi de Vivien BARBEAU avec un QR code vers son profil.</desc>
+  <rect width="794" height="1123" fill="#fcfbf7" />
+  <rect width="794" height="30" fill="#196b4b" />
+
+  <g font-family="DejaVu Sans, sans-serif" fill="#17201d">
+    <text x="64" y="92" font-size="18" font-weight="700" letter-spacing="1.2">VIVIEN BARBEAU</text>
+    <text x="730" y="92" font-size="14" text-anchor="end" fill="#196b4b">DISPONIBLE</text>
+
+    <text x="64" y="202" font-size="69" font-weight="800" letter-spacing="-3.2">VOUS RECRUTEZ</text>
+    <text x="64" y="278" font-size="69" font-weight="800" letter-spacing="-3.2">DANS LA TECH ?</text>
+
+    <rect x="64" y="326" width="102" height="8" rx="4" fill="#d8ef8d" />
+    <text x="64" y="388" font-size="28" font-weight="700">Développeur PHP · Drupal · DevOps</text>
+    <text x="64" y="430" font-size="22" fill="#626b66">À la recherche de ma prochaine équipe.</text>
+
+    <rect x="166" y="488" width="462" height="462" rx="28" fill="#ffffff" stroke="#e1e2dc" stroke-width="2" />
+    <image href="qr-window.svg" x="193" y="515" width="408" height="408" image-rendering="pixelated" />
+
+    <text x="397" y="1009" font-size="26" font-weight="700" text-anchor="middle">Scannez pour découvrir mon profil</text>
+    <text x="397" y="1050" font-size="18" text-anchor="middle" fill="#196b4b">vivienbarbeau.fr/qrcode/</text>
+  </g>
+
+  <circle cx="65" cy="1081" r="6" fill="#2ab673" />
+  <path d="M89 1081H705" stroke="#dde1da" stroke-width="2" />
+  <path d="M713 1073L721 1081L713 1089" fill="none" stroke="#196b4b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
