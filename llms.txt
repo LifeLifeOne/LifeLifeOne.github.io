@@ -19,8 +19,8 @@ Vivien BARBEAU développe des applications Drupal/PHP et industrialise leur livr
 
 ## CV
 
-- [CV Développeur Drupal / PHP](https://vivienbarbeau.fr/assets/CV_Vivien_BARBEAU_Developpeur_Drupal_PHP_ATS.pdf): version PDF compatible ATS.
-- [CV DevOps junior](https://vivienbarbeau.fr/assets/CV_Vivien_BARBEAU_DevOps_Junior_ATS.pdf): version PDF compatible ATS.
+- [CV Développeur Drupal / PHP](https://vivienbarbeau.fr/assets/CV_Vivien_BARBEAU_Drupal_PHP.pdf): version PDF.
+- [CV DevOps junior](https://vivienbarbeau.fr/assets/CV_Vivien_BARBEAU_DevOps.pdf): version PDF.
 
 ## Projets
 
