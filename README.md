@@ -100,8 +100,8 @@ Module contribué améliorant l’expérience des champs d’autocomplétion nat
 
 ### [CarburantsPrix.fr](https://carburantsprix.fr/)
 
-Au-delà du service de comparaison, ce projet personnel m’a surtout servi de **terrain
-d’apprentissage de bout en bout** : SEO technique et programmatique avec Astro, hébergement
+Au-delà du service de comparaison, ce projet personnel constitue mon **laboratoire
+d’expérimentation technique de bout en bout** : SEO technique et programmatique avec Astro, hébergement
 et déploiement sur OVH, exploitation de données publiques, développement Android natif avec
 Kotlin et Jetpack Compose dans Android Studio, puis publication et maintenance sur Google Play.
 

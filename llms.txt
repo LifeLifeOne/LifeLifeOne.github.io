@@ -35,7 +35,7 @@ détaillées publiquement dans ce portfolio ; elles ne représentent pas l’int
 ### Projets personnels et open source
 
 - [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete): module Drupal contribué utilisé par plus de 60 sites.
-- [CarburantsPrix.fr](https://carburantsprix.fr/): terrain d’apprentissage de bout en bout autour du SEO avec Astro, de l’hébergement OVH, des données publiques et du développement Android natif avec Kotlin et Jetpack Compose ; application publiée et maintenue sur [Google Play](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix).
+- [CarburantsPrix.fr](https://carburantsprix.fr/): laboratoire d’expérimentation technique de bout en bout autour du SEO avec Astro, de l’hébergement OVH, des données publiques et du développement Android natif avec Kotlin et Jetpack Compose ; application publiée et maintenue sur [Google Play](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix).
 
 ## Certifications et formation
 
