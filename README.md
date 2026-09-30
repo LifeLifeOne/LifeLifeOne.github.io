@@ -12,6 +12,7 @@
 <p align="center">
   <a href="https://vivienbarbeau.fr/">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/vivien-barbeau/">LinkedIn</a> ·
+  <a href="https://x.com/DiscoverLemon">Discover Lemon</a> ·
   <a href="./assets/CV_Vivien_BARBEAU_PHP_Drupal_DevOps.pdf">CV</a> ·
   <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Prise%20de%20contact">E-mail</a>
 </p>
@@ -91,7 +92,7 @@ Pilotage d’une transformation DevOps de 12 semaines pour rapprocher développe
 
 Compétences du parcours : **CI/CD · DevSecOps · Conteneurisation · Orchestration · IaC · AWS · Observabilité · Cartographies AS-IS / TO-BE · Gestion des risques · Backlogs · Scrum · Management**
 
-## Projets personnels et open source
+## Projets personnels, open source et veille
 
 ### [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete)
 
@@ -106,6 +107,11 @@ et déploiement sur OVH, exploitation de données publiques, développement Andr
 Kotlin et Jetpack Compose dans Android Studio, puis publication et maintenance sur Google Play.
 
 [Consulter l’application Android](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix)
+
+### [Discover Lemon](https://x.com/DiscoverLemon)
+
+Compte éditorial en anglais où je partage mes découvertes autour de l’intelligence
+artificielle, Linux, Omarchy et des outils qui façonnent les environnements de développement.
 
 ## Certifications et formations
 
