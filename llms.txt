@@ -16,7 +16,6 @@ Vivien BARBEAU développe des applications Drupal/PHP et industrialise leur livr
 - Livraison et sécurité : GitLab CI/CD, Docker, SonarCloud, Trivy, Gitleaks, SAST et DAST.
 - Infrastructure : Kubernetes, Helm, Terraform, Ansible, Linux et fondamentaux AWS.
 - Pilotage : Scrum, gestion de projet, management d’équipe et culture DevOps.
-- IA appliquée : ingénierie de prompts, workflows agentiques, outils réutilisables et validation humaine.
 
 ## CV
 
@@ -33,11 +32,10 @@ détaillées publiquement dans ce portfolio ; elles ne représentent pas l’int
 - [MicroCRM](https://gitlab.com/openclassrooms5651214/openclassrooms-p6): industrialisation DevSecOps d’une application Angular et Spring Boot.
 - [CATASTERRE](https://second-muscari-6c4.notion.site/CATASTERRE-Transformation-DevOps-3beb751559088111834df66bfb01543b): pilotage agile d’une transformation DevOps.
 
-### Projets personnels, open source et veille
+### Projets personnels et open source
 
 - [UX Enhanced Autocomplete](https://www.drupal.org/project/ux_enhanced_autocomplete): module Drupal contribué utilisé par plus de 60 sites.
 - [CarburantsPrix.fr](https://carburantsprix.fr/): laboratoire d’expérimentation technique de bout en bout autour du SEO avec Astro, de l’hébergement OVH, des données publiques et du développement Android natif avec Kotlin et Jetpack Compose ; application publiée et maintenue sur [Google Play](https://play.google.com/store/apps/details?id=com.lifelifeone.CarburantsPrix).
-- [Discover Lemon](https://x.com/DiscoverLemon): compte de veille technique en anglais consacré à l’intelligence artificielle, Linux, Omarchy et aux outils de développement.
 
 ## Certifications et formation
 
@@ -50,4 +48,3 @@ détaillées publiquement dans ce portfolio ; elles ne représentent pas l’int
 - [LinkedIn](https://www.linkedin.com/in/vivien-barbeau/)
 - [GitHub](https://github.com/LifeLifeOne)
 - [Drupal.org](https://www.drupal.org/u/lifelifeone)
-- [Discover Lemon sur X](https://x.com/DiscoverLemon)
