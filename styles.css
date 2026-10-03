@@ -898,7 +898,8 @@ a.certification-card:focus-visible .certification-tooltip {
 .recommendations { display: grid; grid-template-columns: 0.9fr 1.1fr; align-items: center; gap: 10vw; padding-block: 9rem; }
 .recommendation-copy > p:not(.eyebrow) { max-width: 570px; margin: 1.8rem 0; color: var(--muted); }
 .recommendation-copy .recommendation-privacy { padding-left: 1rem; border-left: 2px solid var(--green); font-size: 0.78rem; }
-.recommendation-privacy a { color: var(--green); font-weight: 700; text-underline-offset: 3px; }
+.recommendation-email { display: inline-block; }
+.recommendation-email button { padding: 0; border: 0; background: transparent; color: var(--green); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .recommendation-note { display: inline-flex; padding: 0.4rem 0.7rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--green); font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.05em; text-transform: uppercase; }
 .recommendation-list { overflow: hidden; border: 1px solid var(--line); border-radius: 0.9rem; background: var(--surface); box-shadow: 0 24px 60px rgba(23,32,29,0.06); }
 .letter-card { display: grid; grid-template-columns: 1fr auto; gap: 0.75rem 1.5rem; align-items: center; padding: 1.35rem 1.5rem; border-bottom: 1px solid var(--line); }
@@ -928,9 +929,19 @@ a.certification-card:focus-visible .certification-tooltip {
 .contact-inner { padding-block: 8rem; }
 .contact-inner h2 { max-width: 900px; }
 .contact-inner > p:not(.eyebrow) { max-width: 580px; margin: 1.8rem 0 3rem; color: var(--on-green-muted); font-size: 1.05rem; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-.contact-links a { display: flex; justify-content: space-between; min-width: 270px; padding: 1rem 1.1rem; border: 1px solid color-mix(in srgb, var(--on-green) 40%, transparent); border-radius: 999px; font-size: 0.82rem; font-weight: 700; text-decoration: none; transition: background 180ms ease, color 180ms ease; }
-.contact-links a:hover { background: var(--on-green); color: var(--green); }
+.contact-links { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.8rem; }
+.contact-links a, .email-contact-trigger { display: flex; justify-content: space-between; min-width: 270px; padding: 1rem 1.1rem; border: 1px solid color-mix(in srgb, var(--on-green) 40%, transparent); border-radius: 999px; background: transparent; color: inherit; font-size: 0.82rem; font-weight: 700; text-decoration: none; transition: background 180ms ease, color 180ms ease; cursor: pointer; }
+.contact-links a:hover, .email-contact-trigger:hover { background: var(--on-green); color: var(--green); }
+.email-contact { display: grid; justify-items: start; gap: 0.65rem; }
+.email-contact-details { display: flex; align-items: center; gap: 0.6rem; max-width: 100%; padding: 0.45rem 0.55rem 0.45rem 1rem; border: 1px solid color-mix(in srgb, var(--on-green) 40%, transparent); border-radius: 999px; font-family: var(--mono); font-size: clamp(0.62rem, 2.5vw, 0.78rem); overflow-wrap: anywhere; }
+.email-contact-details[hidden] { display: none; }
+.copy-email { display: grid; flex: 0 0 auto; width: 2.25rem; height: 2.25rem; place-items: center; border: 0; border-radius: 50%; background: var(--on-green); color: var(--green); cursor: pointer; }
+.copy-email:hover { background: var(--ink); color: var(--paper); }
+.copy-email svg { width: 1.05rem; height: 1.05rem; }
+.copy-control { position: relative; flex: 0 0 auto; }
+.copy-status { position: absolute; right: 0; bottom: calc(100% + 0.75rem); z-index: 2; width: max-content; max-width: min(240px, 70vw); margin: 0; padding: 0.7rem 0.9rem; border-radius: 0.65rem; background: var(--ink); color: var(--paper); box-shadow: 0 6px 18px rgb(0 0 0 / 18%); font-family: Manrope, sans-serif; font-size: 0.78rem; font-weight: 700; text-align: center; pointer-events: none; opacity: 0; }
+.copy-status::after { content: ""; position: absolute; right: 0.8rem; top: 100%; border: 6px solid transparent; border-top-color: var(--ink); }
+.copy-status.is-visible { opacity: 1; }
 
 .site-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.4rem max(4vw, calc((100vw - var(--max-width)) / 2)); background: var(--dark); color: var(--on-dark-muted); font-family: var(--mono); font-size: 0.75rem; }
 .site-footer a { color: var(--on-dark); text-decoration: none; }

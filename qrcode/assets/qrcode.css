@@ -223,6 +223,9 @@ h1 {
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 700;
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -374,6 +377,41 @@ h1 {
 .contact-panel .eyebrow { justify-content: center; }
 .contact-panel h2 { max-width: 700px; margin-inline: auto; }
 .contact-panel > p:not(.eyebrow) { max-width: 620px; margin: 0 auto 2rem; color: var(--muted); }
+.contact-email {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 1.25rem auto 0;
+  padding: 0.5rem 0.6rem 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: clamp(0.68rem, 2.5vw, 0.85rem);
+  overflow-wrap: anywhere;
+}
+.contact-email[hidden] { display: none; }
+.copy-email {
+  display: grid;
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--green);
+  cursor: pointer;
+}
+.copy-email:hover { background: var(--green); color: var(--on-green); }
+.copy-email svg { width: 1.15rem; height: 1.15rem; }
+.copy-control { position: relative; flex: 0 0 auto; }
+.copy-status { position: absolute; right: 0; bottom: calc(100% + 0.75rem); z-index: 2; width: max-content; max-width: min(240px, 70vw); margin: 0; padding: 0.7rem 0.9rem; border-radius: 0.65rem; background: var(--ink); color: var(--paper); box-shadow: 0 6px 18px rgb(0 0 0 / 18%); font-family: Manrope, sans-serif; font-size: 0.78rem; font-weight: 700; text-align: center; pointer-events: none; opacity: 0; }
+.copy-status::after { content: ""; position: absolute; right: 0.8rem; top: 100%; border: 6px solid transparent; border-top-color: var(--ink); }
+.copy-status.is-visible { opacity: 1; }
 
 .window-photo {
   width: min(calc(100% - 3rem), 900px);

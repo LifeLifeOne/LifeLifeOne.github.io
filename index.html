@@ -263,8 +263,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260924b" />
-    <script src="script.js?v=20260821h" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261003c" />
+    <script src="script.js?v=20261003c" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -849,7 +849,8 @@
             Afin de protéger les données personnelles et de limiter les risques de divulgation
             ou de spam, les coordonnées ont été masquées sur les versions publiques. Pour obtenir
             une lettre originale avec les coordonnées de son auteur,
-            <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Demande%20de%20lettre%20de%20recommandation">contactez-moi par e-mail</a>.
+            <span class="copy-control recommendation-email">
+              <button type="button" data-copy-recommendation-email aria-label="Copier mon adresse e-mail">contactez-moi par e-mail</button><span class="copy-status" data-recommendation-copy-status aria-live="polite"></span></span>.
           </p>
           <span class="recommendation-note">Versions publiques caviardées · PDF & LinkedIn</span>
         </div>
@@ -929,7 +930,30 @@
           <h2>Un projet web ou DevOps<br />à faire avancer ?</h2>
           <p>Basé à Nantes, je suis ouvert aux postes hybrides ou en full remote, et prêt à déménager partout en France pour la bonne opportunité.</p>
           <div class="contact-links">
-            <a href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BPortfolio%5D%20Prise%20de%20contact">M’écrire par e-mail <span>↗</span></a>
+            <div class="email-contact">
+              <button
+                class="email-contact-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="portfolio-contact-email"
+                data-reveal-email
+              >
+                M’écrire par e-mail <span aria-hidden="true">↓</span>
+              </button>
+              <div class="email-contact-details" id="portfolio-contact-email" data-contact-email hidden>
+                <span>vivien.barbeau.contact@gmail.com</span>
+                <div class="copy-control">
+                  <button class="copy-email" type="button" data-copy-email aria-label="Copier l’adresse e-mail" title="Copier l’adresse e-mail">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                      <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                    </svg>
+                  </button>
+                  <span class="copy-status" data-copy-status aria-live="polite"></span>
+                </div>
+
+              </div>
+            </div>
             <a href="https://www.linkedin.com/in/vivien-barbeau/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
           </div>
         </div>

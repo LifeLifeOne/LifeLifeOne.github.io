@@ -45,8 +45,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/qrcode.css?v=20260930a" />
-    <script src="assets/qrcode.js?v=20260928b" defer></script>
+    <link rel="stylesheet" href="assets/qrcode.css?v=20261003c" />
+    <script src="assets/qrcode.js?v=20261003c" defer></script>
     <script
       data-goatcounter="https://vivienbarbeau.goatcounter.com/count"
       async
@@ -109,14 +109,18 @@
             >
               Télécharger mon CV <span aria-hidden="true">↓</span>
             </a>
-            <a
-              class="button button-secondary"
-              href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BQR%20Code%5D%20Prise%20de%20contact"
-              data-goatcounter-click="email-contact"
-              data-goatcounter-title="Prise de contact par e-mail"
-            >
-              M’écrire <span aria-hidden="true">↗</span>
-            </a>
+            <div class="copy-control hero-email">
+              <button
+                class="button button-secondary"
+                type="button"
+                data-copy-hero-email
+                data-goatcounter-click="email-contact"
+                data-goatcounter-title="Prise de contact par e-mail"
+              >
+                M’écrire <span aria-hidden="true">↗</span>
+              </button>
+              <span class="copy-status" data-hero-copy-status aria-live="polite"></span>
+            </div>
             <a
               class="button button-text"
               href="https://www.linkedin.com/in/vivien-barbeau/"
@@ -171,26 +175,6 @@
         </div>
       </section>
 
-      <section class="ai-section" aria-labelledby="ia-titre">
-        <div class="ai-heading">
-          <p class="eyebrow"><span></span>IA appliquée</p>
-          <h2 id="ia-titre">L’IA comme accélérateur, avec méthode.</h2>
-        </div>
-        <div class="ai-content">
-          <p>
-            J’intègre l’IA générative à mes pratiques de développement pour mieux analyser,
-            prototyper et documenter. Je structure le contexte, orchestre des workflows
-            agentiques et transforme les méthodes efficaces en outils réutilisables — tout en
-            gardant la validation humaine au centre.
-          </p>
-          <ul aria-label="Pratiques en intelligence artificielle">
-            <li><span>01</span>Contexte structuré</li>
-            <li><span>02</span>Workflows agentiques</li>
-            <li><span>03</span>Validation humaine</li>
-          </ul>
-        </div>
-      </section>
-
       <section class="contact-panel" aria-labelledby="contact-titre">
         <p class="eyebrow"><span></span>Prochaine étape</p>
         <h2 id="contact-titre">Et si ma prochaine équipe était la vôtre&nbsp;?</h2>
@@ -198,14 +182,30 @@
           Parlons de vos projets Drupal, PHP, DevOps ou IA appliquée et de la manière dont je
           peux y contribuer.
         </p>
-        <a
+        <button
           class="button button-primary"
-          href="mailto:vivien.barbeau.contact@gmail.com?subject=%5BQR%20Code%5D%20Prise%20de%20contact"
+          type="button"
+          aria-expanded="false"
+          aria-controls="contact-email"
+          data-reveal-email
           data-goatcounter-click="email-contact"
           data-goatcounter-title="Prise de contact par e-mail"
         >
-          Démarrer la conversation <span aria-hidden="true">↗</span>
-        </a>
+          Démarrer la conversation <span aria-hidden="true">↓</span>
+        </button>
+        <div class="contact-email" id="contact-email" data-contact-email hidden>
+          <span>vivien.barbeau.contact@gmail.com</span>
+          <div class="copy-control">
+            <button class="copy-email" type="button" data-copy-email aria-label="Copier l’adresse e-mail" title="Copier l’adresse e-mail">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.7" />
+                <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.7" />
+              </svg>
+            </button>
+            <span class="copy-status" data-copy-status aria-live="polite"></span>
+          </div>
+        </div>
+
       </section>
 
       <template id="window-photo-template">
